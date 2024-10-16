@@ -8,6 +8,7 @@ from utils.faiss import Myfaiss
 from genarator import PrenIdexBinGenerator as pre
 from flask_cors import CORS
 import openai_func as opai
+
 os.environ['CUDA_VISIBLE_DEVICES'] = '-1'
 
 # app = Flask(__name__, template_folder='templates')

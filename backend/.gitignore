@@ -10,5 +10,5 @@ __pycache__/
 data/.DS_Store
 pre_faiss_normal_ViT.bin
 demo.py
-openai_func.py
 test.py
+.env
