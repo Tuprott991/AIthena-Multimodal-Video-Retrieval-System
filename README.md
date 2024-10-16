@@ -18,6 +18,7 @@ pip install -r requirements.txt
     
 
 <!-- ![image](https://github.com/user-attachments/assets/31721ad1-5a83-4c5c-aae2-7ba6d23f21df) -->
+- To host the backend:
 
 ```
 python app.py
@@ -26,7 +27,7 @@ python app.py
 ### Frontend folder
 - Copy your images into **_Frontend/public/images_** 
 
-```
+    ```
 npm install
 ```
 ```
