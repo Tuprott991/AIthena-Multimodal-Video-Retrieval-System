@@ -27,7 +27,7 @@ python app.py
 ### Frontend folder
 - Copy your images into **_Frontend/public/images_** 
 
-    ```
+```
 npm install
 ```
 ```
