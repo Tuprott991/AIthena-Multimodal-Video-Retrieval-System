@@ -12,8 +12,7 @@ metadata: chứa thông tin về video đó - dùng để lấy link youtube
 
 ## Setup 
 ```
-pip install git+https://github.com/openai/CLIP.git
-pip install -r requirements.txt
+
 
 Tải môi trường chạy OCR: https://www.miai.vn/2019/08/22/ocr-nhan-dang-van-ban-tieng-viet-voi-tesseract-ocr/
 -> Install và lưu file chương trình ở thư mục mặc định là: "C:\Program Files\Tesseract-OCR"

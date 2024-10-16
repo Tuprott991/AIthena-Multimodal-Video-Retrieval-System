@@ -1,4 +1,10 @@
 # AI-Challenge
+
+### Setup
+
+**_pip install git+https://github.com/openai/CLIP.git_**
+**_pip install -r requirements.txt_**
+
 ### Backend folder
 - First, we have to start our backend
 - Check the CLIP-features folder first, please copy all features file into this folder 
