@@ -6,7 +6,7 @@
 - We have to create **_data_** folder in **backend**
 
 
-![image](https://github.com/user-attachments/assets/31721ad1-5a83-4c5c-aae2-7ba6d23f21df)
+<!-- ![image](https://github.com/user-attachments/assets/31721ad1-5a83-4c5c-aae2-7ba6d23f21df) -->
 
 ```
 python app.py
