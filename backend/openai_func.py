@@ -98,15 +98,15 @@ def gen_img(i_prompt):
   image = Image.open(BytesIO(image_response.content))
   image.show()  # Hiển thị hình ảnh
 
-def main():
-  standard_prompt(input("Nhập prompt đi thằng ngu:"))
-#
-#   # image_path = "227.jpg"
-#   #qa(image_path,api_key,"What's license plate number")
-#   #gen_img(api_key,"Với ngữ cảnh là tôi đang thi cuộc thi VBS và cần tạo ảnh để thực hiện chức năng simularity search để giải quyết video-kis, ảnh rất thực tế không mang tính thẩm mỹ. Hãy tạo ảnh 2 cánh tay người đang móc đồ trang trí là quả bóng vào cây thông noel, với cây thông noel nằm bên trái khung hình và 2 cánh tay chìa ra từ bên phải khung hình")
-#   gen_img(api_key,"Create three distinct medals inspired by the 2024 Paris Olympic and Paralympic Games, each with unique designs. The first medal on the left is silver, featuring geometric diamond patterns with a centered Paralympic symbol, giving a modern and reflective appearance. The second medal in the center is gold, shaped with radiating triangular ridges and a hexagon in the middle bearing the Olympic flame and 'Paris 2024' text. The third medal on the right is bronze, with an artistic depiction of a winged figure inspired by Greek mythology, alongside the Olympic rings and architectural elements. Each medal should have a ribbon attached with subtle Olympic patterns, using blue for the Olympic ones and red for the Paralympic one.")
+# def main():
+#   standard_prompt(input("Nhập prompt đi thằng ngu:"))
+# #
+# #   # image_path = "227.jpg"
+# #   #qa(image_path,api_key,"What's license plate number")
+# #   #gen_img(api_key,"Với ngữ cảnh là tôi đang thi cuộc thi VBS và cần tạo ảnh để thực hiện chức năng simularity search để giải quyết video-kis, ảnh rất thực tế không mang tính thẩm mỹ. Hãy tạo ảnh 2 cánh tay người đang móc đồ trang trí là quả bóng vào cây thông noel, với cây thông noel nằm bên trái khung hình và 2 cánh tay chìa ra từ bên phải khung hình")
+# #   gen_img(api_key,"Create three distinct medals inspired by the 2024 Paris Olympic and Paralympic Games, each with unique designs. The first medal on the left is silver, featuring geometric diamond patterns with a centered Paralympic symbol, giving a modern and reflective appearance. The second medal in the center is gold, shaped with radiating triangular ridges and a hexagon in the middle bearing the Olympic flame and 'Paris 2024' text. The third medal on the right is bronze, with an artistic depiction of a winged figure inspired by Greek mythology, alongside the Olympic rings and architectural elements. Each medal should have a ribbon attached with subtle Olympic patterns, using blue for the Olympic ones and red for the Paralympic one.")
 
-if __name__ == "__main__":
-    main()
+# if __name__ == "__main__":
+#     main()
 
 
