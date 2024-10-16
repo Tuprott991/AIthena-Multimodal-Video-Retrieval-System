@@ -1,4 +1,4 @@
-# AI-Challenge
+# AIthena Team
 
 ### Setup
 #### Warning: This system work perfectly on python==3.11.9 and pip==24.0
