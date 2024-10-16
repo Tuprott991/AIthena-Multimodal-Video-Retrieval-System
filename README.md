@@ -4,8 +4,12 @@
 #### Warning: This system work perfectly on python==3.11.9 and pip==24.0
 #### Please follow the instruction below
 
-- **_pip install git+https://github.com/openai/CLIP.git_**
-- **_pip install -r requirements.txt_**
+```
+pip install git+https://github.com/openai/CLIP.git
+```
+```
+pip install -r requirements.txt
+```
 
 ### Backend folder
 - First, we have to start our backend
