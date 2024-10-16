@@ -1,0 +1,819 @@
+[
+    {
+        "start_time": 10,
+        "end_time": 20,
+        "text": "chào mừng quý vị đến với chương trình 60 giây của đài truyền hình thành phố Hồ Chí Minh chương trình Sáng nay có những thông tin nổi bật",
+        "img_path": [
+            "005.jpg",
+            "006.jpg",
+            "007.jpg",
+            "008.jpg"
+        ]
+    },
+    {
+        "start_time": 20,
+        "end_time": 30,
+        "text": "sau lý giải Việt hình thành đám m hình cầu vòng có màu sắc sạc sở tại thành phố Hồ Chí Minh giá vàng giảm mạnh sau chỉ đạo của chính phủ thanh tra thị trường",
+        "img_path": [
+            "009.jpg",
+            "010.jpg",
+            "011.jpg"
+        ]
+    },
+    {
+        "start_time": 30,
+        "end_time": 40,
+        "text": "vàng ít nhất 37 người thiệt mạng và nhiều người mất tích do lũ lục và lỡ đất ở Indonesia [âm nhạc]",
+        "img_path": [
+            "012.jpg",
+            "013.jpg",
+            "014.jpg"
+        ]
+    },
+    {
+        "start_time": 40,
+        "end_time": 50,
+        "text": "thưa quý vị đám may hình cầu vồng có màu sắc sạc sở xuất hiện trên bầu trời thành phố Hồ Chí Minh vào khoảng 1600 chiều 12 tháng n khiến nhiều người thích thú đám",
+        "img_path": [
+            "015.jpg"
+        ]
+    },
+    {
+        "start_time": 50,
+        "end_time": 60,
+        "text": "May Duy trì trong vòng 1 giờ sau đó tan biến khi mặt trời lặng theu phòng dự báo khí tượng đài khí tượng thủy văn Nam Bộ thì đây là mây ngũ sắc trong khí tượng xếp vào loại hào",
+        "img_path": [
+            "016.jpg",
+            "017.jpg",
+            "018.jpg"
+        ]
+    },
+    {
+        "start_time": 60,
+        "end_time": 70,
+        "text": "quang hiện thực này xảy ra lúc có sự nhiễu xạ khiến các hạt mây hoặc những tinh thể băng kích thức nhỏ cấu trúc riêng lẻ tán xạ ánh sáng màu sắc trong",
+        "img_path": [
+            "019.jpg",
+            "020.jpg"
+        ]
+    },
+    {
+        "start_time": 70,
+        "end_time": 80,
+        "text": "mây của hiệnn tượng này không giống cầu vòng bảy màu theo giải phổ mặt trời mà có khi nhạt lúc sặc sở Đây chỉ là hiện tượng bình thường trong khí tượng không nói lên bất kỳ dấu hiệu nào về diễn biến",
+        "img_path": [
+            "021.jpg"
+        ]
+    },
+    {
+        "start_time": 80,
+        "end_time": 90,
+        "text": "thời tiết sắp xảy ra còn theo Hội Thiên văn và vũ trụ học Việt Nam mây ngũ sắc không liên quan đến hiện tượng bão mặt trời mây ngũ sắc không quá hiếm nhưng",
+        "img_path": [
+            "022.jpg",
+            "023.jpg"
+        ]
+    },
+    {
+        "start_time": 90,
+        "end_time": 100,
+        "text": "không có chu kỳ xuất hiện nên khó dự đoán trước đôi khi hiện tượng này kéo dài chỉ vài phút",
+        "img_path": [
+            "024.jpg"
+        ]
+    },
+    {
+        "start_time": 100,
+        "end_time": 110,
+        "text": "với mong muốn đưa Nghệ thuật Biểu diễn âm nhạc ứng dụng vào ngành học mở ra một phương thức giải trí mới nhóm sinh viên của Đại học Kinh tế thành phố Hồ Chí Minh đã chế tạo ra robot chơi đèn piano việc sinh viên nam nhất có đam mê nghiên",
+        "img_path": [
+            "025.jpg",
+            "026.jpg"
+        ]
+    },
+    {
+        "start_time": 110,
+        "end_time": 120,
+        "text": "cứu và chế tạo robot này được đánh giá cao tạo tề đề để các bạn trẻ tham gia các cuộc thi chế tạo robot trong tương lai robot năng khoảng 15 kg bao gồm bộ",
+        "img_path": [
+            "027.jpg"
+        ]
+    },
+    {
+        "start_time": 120,
+        "end_time": 130,
+        "text": "khung cơ thể giả lập đu có thể di chuyển theo nhịp điều khung đàn hệ thống dây tín hiệu kết nối với bộ điều khiển trung tâm do ngón tay của robot không được",
+        "img_path": [
+            "028.jpg"
+        ]
+    },
+    {
+        "start_time": 130,
+        "end_time": 140,
+        "text": "linh hoạt như con người nên mỗi bàn tay có sáu ngón để bọc quát hết phím đàn mặch ch em lựa chọn là những cái con sô",
+        "img_path": [
+            "029.jpg",
+            "030.jpg"
+        ]
+    },
+    {
+        "start_time": 140,
+        "end_time": 150,
+        "text": "nhỏ để điều khiển trên đầu robot và sử dụng flashy để làm giao diện của con robot này và tụi em sẽ trình Cái giao diện này trên VNC viewer để tụi em có",
+        "img_path": [
+            "031.jpg",
+            "032.jpg"
+        ]
+    },
+    {
+        "start_time": 150,
+        "end_time": 160,
+        "text": "thể điều khiển và lựa chọn những bài hát cho nó đánh đối với một bản nhạc mới robot sẽ cần tập chơi từ 5 đến 10 lần là thành thạo phí để chế tạo khoảng 10",
+        "img_path": [
+            "033.jpg",
+            "034.jpg",
+            "035.jpg",
+            "036.jpg"
+        ]
+    },
+    {
+        "start_time": 160,
+        "end_time": 170,
+        "text": "triệu đồng và mất khoảng 3 tháng nghiên cứu để mà thương mại hóa thì các bạn cần phải cái sự thay đổi nhiều hơn cả về cơ cấu của robot cả về cái việc khả năng",
+        "img_path": [
+            "037.jpg",
+            "038.jpg"
+        ]
+    },
+    {
+        "start_time": 170,
+        "end_time": 180,
+        "text": "thẩm âm của nó như thế nào nhóm sinh viên cho biết có thâm phọng sẽ mở một buổi hòa nhạc mà ở đó phần trình diễn sẽ do robot đảm",
+        "img_path": [
+            "039.jpg",
+            "040.jpg"
+        ]
+    },
+    {
+        "start_time": 180,
+        "end_time": 190,
+        "text": "nhận sau khi nhận được thông tin về vụ cháy tại trung tâm thương mại số 44 Mari wika vsava ba lan Đại sứ quán Việt Nam tại Ba Lan đã cử nhân sớm công tác ngay",
+        "img_path": [
+            "041.jpg",
+            "042.jpg",
+            "043.jpg"
+        ]
+    },
+    {
+        "start_time": 190,
+        "end_time": 200,
+        "text": "lập tức tới hiện trường và phối hợp với hội người Việt Nam tại Ba Lan nắm bắt tình hình và sớm triển khai công tác bảo hộ công dân đại sứ quán Việt Nam tại Ba",
+        "img_path": [
+            "044.jpg"
+        ]
+    },
+    {
+        "start_time": 200,
+        "end_time": 210,
+        "text": "Lan đã đăng số đường dây nóng về bảo hộ Công Dân Để nắm bắt thông tin từ kiều bào sẵn sàng hỗ trợ bà con làm việc với các cơ quan chức năng sở tại Ban Quản lý trung tâm thương mại lực lượng phòng",
+        "img_path": [
+            "045.jpg",
+            "046.jpg"
+        ]
+    },
+    {
+        "start_time": 210,
+        "end_time": 220,
+        "text": "cháy chữa cháy và phía bảo hiểm để giảm thiểu hậu quả của vụ cháy Bên cạnh đó với những bà con bị mất giấy tờ trong vụ cháy Đại sứ quán Việt Nam tại Ba Lan sẵn sà hỗ trợ tối đa để sớm cấp lại giấy tờ",
+        "img_path": [
+            "047.jpg"
+        ]
+    },
+    {
+        "start_time": 220,
+        "end_time": 230,
+        "text": "mới hội người Việt Nam tại Ba Lan đang tích cực phối hợp với Đại Sứ Quán để nắm bắt thông tin động viên thăm hỏi bà con có quậy hàng bị thiệt hại trong vụ cháy",
+        "img_path": [
+            "048.jpg",
+            "049.jpg"
+        ]
+    },
+    {
+        "start_time": 230,
+        "end_time": 240,
+        "text": "và vận động viên góp hỗ trợ bước đầu thưa quý vị sau một tuần nóng bỏng",
+        "img_path": [
+            "050.jpg",
+            "051.jpg"
+        ]
+    },
+    {
+        "start_time": 240,
+        "end_time": 250,
+        "text": "khi giá vàng chạm móc 92 triệu đồng một lượng thì giá vàng đã bất ngờ đảo chiều hạ nhiệt giảm mạnh trong ngày cuối tuần giá vàng miếng Sac xoay quanh mức từ 86 đến 91 triệu đồng một lượng mua vào bán",
+        "img_path": [
+            "052.jpg"
+        ]
+    },
+    {
+        "start_time": 250,
+        "end_time": 260,
+        "text": "ra giảm ở cả ha Chiều mua vào và bán ra so với chốt phiên trước đó phân tích nguyên nhân ông Vi Tuấn chuyên gia giavang.net cho biết phản ứng",
+        "img_path": [
+            "053.jpg",
+            "054.jpg"
+        ]
+    },
+    {
+        "start_time": 260,
+        "end_time": 270,
+        "text": "của thị trường sau khi Văn phòng Chính phủ ban hành văn bản thông báo kết luận của phó thủ tướng Lê Minh khái tại cuộc họp về các giải pháp quản lý thị trường trong thời gian tới Phó Thủ tướng chỉ",
+        "img_path": [
+            "055.jpg",
+            "056.jpg"
+        ]
+    },
+    {
+        "start_time": 270,
+        "end_time": 280,
+        "text": "đạo khẩn trương thực hiện ngay Việc thanh tra kiểm tra chuyên ngành đối với thị trường vàng kịp thời chấn chỉnh và xử lý nghiêm các vi phạm trong sản xuất kinh doanh và bà biến trường hợp có dấu",
+        "img_path": [
+            "056.jpg",
+            "057.jpg"
+        ]
+    },
+    {
+        "start_time": 280,
+        "end_time": 290,
+        "text": "hiệu vi phạm pháp luật kịp thời chuyển ngay hồ sơ đến bộ công an và các cơ quan chức năng để xử lý theo quy định thông báo kết luận nêu rõ ngân hàng nhà nước Việt Nam theo chức năng nhiệm vụ thẩm",
+        "img_path": [
+            "058.jpg",
+            "059.jpg"
+        ]
+    },
+    {
+        "start_time": 290,
+        "end_time": 300,
+        "text": "quyền đã triển khai các giải pháp quản lý thị trường vàng Tuy nhiên tình hình chưa có nhiều chuyển biến giá vàng miếng trong nước tiếp tục tăng tình trạng chênh lệch cao giữa giá vàng miếng trong",
+        "img_path": [
+            "060.jpg"
+        ]
+    },
+    {
+        "start_time": 300,
+        "end_time": 310,
+        "text": "nước và giá vàng thế giới vẫn chưa thể khắc phục tuy nhiên giá vàng trong nước khó tránh khỏi những tác động của thị trường quốc tế giá vàng thế giới đang trở lại đ Tăng nhờ đồng đô la Mỹ và lợi",
+        "img_path": [
+            "061.jpg",
+            "062.jpg"
+        ]
+    },
+    {
+        "start_time": 310,
+        "end_time": 320,
+        "text": "suất trái phiếu kho bạc Mỹ đồng loạt giảm trong phần sau của chươ trình hai thanh niên đi xe máy tử vong khi ôn cua",
+        "img_path": [
+            "063.jpg",
+            "064.jpg",
+            "065.jpg",
+            "066.jpg"
+        ]
+    },
+    {
+        "start_time": 320,
+        "end_time": 330,
+        "text": "đối đầu với xe tải nghi vấn máy hàng phát nổ khiến hai cha con thương",
+        "img_path": [
+            "067.jpg",
+            "068.jpg",
+            "069.jpg"
+        ]
+    },
+    {
+        "start_time": 330,
+        "end_time": 340,
+        "text": "vòng liên quan đến vụ tai nạn giao thông chết người xảy ra trên địa bàn h",
+        "img_path": [
+            "070.jpg",
+            "071.jpg"
+        ]
+    },
+    {
+        "start_time": 340,
+        "end_time": 350,
+        "text": "thành phố Hồ Chí Minh công an huyện đang truy tìm người đàn ông điều khiển xe máy có liên quan trước đó khoảng 14 gi ngày 12 tháng 5 hai chiếc xe máy do hai người điều",
+        "img_path": [
+            "072.jpg",
+            "073.jpg",
+            "074.jpg"
+        ]
+    },
+    {
+        "start_time": 350,
+        "end_time": 360,
+        "text": "khiển Đã va chạm rồi trượt dài trên đường tỉnh lộ tá đoạn gần giao lộ Nguyễn Thị nỉ xã Trung An một người bị thương rất nặng được người dân sơ cứu rồi đưa đi bệnh viện cấp cứu người còn lại sau",
+        "img_path": [
+            "075.jpg",
+            "076.jpg"
+        ]
+    },
+    {
+        "start_time": 360,
+        "end_time": 370,
+        "text": "đó đã lên xe máy rời đi nạn nhân được xác định là anh lvc 32 tuổi quê Đồng Tháp người nhà cho biết dù được đưa vào bệnh viện cấp cứu nhưng do vết thương",
+        "img_path": [
+            "077.jpg",
+            "078.jpg",
+            "079.jpg",
+            "080.jpg"
+        ]
+    },
+    {
+        "start_time": 370,
+        "end_time": 380,
+        "text": "quá nặng nên anh đã tử vong sau đó vụ việc đang được tiếp tục điều tra làm rõ Tối qua một xe tải đã kéo sập thành",
+        "img_path": [
+            "081.jpg",
+            "082.jpg",
+            "083.jpg"
+        ]
+    },
+    {
+        "start_time": 380,
+        "end_time": 390,
+        "text": "giới hạn chiều cao của hàm chui nhiều người thoát nạn trong gan tất Theo thông tin ban đầu khoảng 19 gi xe tải do một nam tài xế cầm lái chạy",
+        "img_path": [
+            "084.jpg",
+            "085.jpg"
+        ]
+    },
+    {
+        "start_time": 390,
+        "end_time": 400,
+        "text": "trên đường sông hành xa lội Hà Nội hướng Từ khu công nghệ cao về đại học quốc gia thuộc phường Linh Trung Thành phố Thủ Đức thành phố Hồ Chí Minh khi đến đ Hầm chui của nhánh trẻ từ quốc lộ 1 ra x lộ",
+        "img_path": [
+            "086.jpg",
+            "087.jpg"
+        ]
+    },
+    {
+        "start_time": 400,
+        "end_time": 410,
+        "text": "Hà Nội thì kéo sập Thanh giới hạn chiều cao 2,5 m thời điểm này có nhiều xe máy lưu thông nhưng tất cả đã kịp xử lý tránh và trúng tại hiện trường thành",
+        "img_path": [
+            "088.jpg",
+            "089.jpg"
+        ]
+    },
+    {
+        "start_time": 410,
+        "end_time": 420,
+        "text": "giới hạng chiều cao nằm chắn hết ngang một phần hướng đi phân máy trên xe tải hư hỏng nhậ tin báo Công an Thành phố Thủ Đức có mặt điều tiết giao thông xử",
+        "img_path": [
+            "090.jpg"
+        ]
+    },
+    {
+        "start_time": 420,
+        "end_time": 430,
+        "text": "lý hiện trường đáng lưu ý trên thanh giới hàng chiều cao có biển cắm xe tải và xe khách nhưng tài xế vẫn lưu thông vào",
+        "img_path": [
+            "091.jpg",
+            "092.jpg",
+            "093.jpg"
+        ]
+    },
+    {
+        "start_time": 430,
+        "end_time": 440,
+        "text": "cuối giờ chiều qua một vụ tai nạn giao thông chết người đã xảy ra trên địa bàn thành phố Tân Uyên tỉnh Bình Dương thông tin ban đầu hơn 17 gi Chiều hai nam thanh niên chở nhau bằng xe máy",
+        "img_path": [
+            "094.jpg",
+            "095.jpg"
+        ]
+    },
+    {
+        "start_time": 440,
+        "end_time": 450,
+        "text": "chạy trên đường tỉnh lộ 747a hướng từ phường Thái Hòa đi trung tâm thành phố Tân Uyên tỉnh Bình Dương khi đến đoạn đường cong thuộc khu phố Cây g phường",
+        "img_path": [
+            "096.jpg",
+            "097.jpg"
+        ]
+    },
+    {
+        "start_time": 450,
+        "end_time": 460,
+        "text": "Thạnh Phước thành phố Tân Uyên thì xảy ra va chạm với xe tại biển số thành phố Hồ Chí Minh đang chạy hướng ngược lại va chạm làm hai nam thanh niên vă lên vỉa hè bên trái tự vong tại chỗ hai phương",
+        "img_path": [
+            "098.jpg",
+            "099.jpg"
+        ]
+    },
+    {
+        "start_time": 460,
+        "end_time": 470,
+        "text": "tiện hư hỏng nhận tin báo công an thành phố Tân Uyên đã tới khám nghiệm hiện trường điều tiết giao thông tới tối cùng ngày thi thể hai nạn nhân được chuyển về nhà",
+        "img_path": [
+            "100.jpg",
+            "101.jpg"
+        ]
+    },
+    {
+        "start_time": 470,
+        "end_time": 480,
+        "text": "xác hai người thương Phong sau một tiếng nộ lớn ở thị trấn Tiên Kỳ huyện Tiên Phước tỉnh Quảng Nam theo lãnh đạo huyện Tiên Phước vụ nổ xảy ra lúc 15:30 cùng ngày tại nhà ông",
+        "img_path": [
+            "102.jpg",
+            "103.jpg",
+            "104.jpg",
+            "105.jpg"
+        ]
+    },
+    {
+        "start_time": 480,
+        "end_time": 490,
+        "text": "Nguyễn Xuân l 43 tuổi vào thời điểm này ông l cùng với con trai là cháu ngn Duy ca học s lớp B đang ở nhà hậu quả khiến",
+        "img_path": [
+            "106.jpg"
+        ]
+    },
+    {
+        "start_time": 490,
+        "end_time": 500,
+        "text": "người cha Tử Phong tại chỗ người con bị thương được người dân gần đó đưa đến bệnh viện cấp cứu sau khi nhận được thông tin công an huyện Tiên Phước phối hợp với công an tỉnh Quảng Nam đã có mặt",
+        "img_path": [
+            "107.jpg",
+            "108.jpg"
+        ]
+    },
+    {
+        "start_time": 500,
+        "end_time": 510,
+        "text": "tại hiện trường qua kiểm tra ban đầu có thể đây là vụ tai nạn lao động khi nạn nhân Đang hàn sắt thì máy hàng phát nổ các cơ quan chức năng đang tiếp tục điều",
+        "img_path": [
+            "109.jpg"
+        ]
+    },
+    {
+        "start_time": 510,
+        "end_time": 520,
+        "text": "tra để làm rõ vụ viện Công an quận Hoàng Kiếm Hà Nội ngày 12 tháng 5 cho biết đã nắm bắt được thông tin và đang yêu cầu công an phường hàng bườm Làm rõ việc tài xế taxi chặt",
+        "img_path": [
+            "110.jpg",
+            "111.jpg"
+        ]
+    },
+    {
+        "start_time": 520,
+        "end_time": 530,
+        "text": "chém hai du khách nước ngoài theo thông tin ban đầu hai du khách người Pháp bị tài xế taxi tính giá 500.000đ khi di chuyển từ phố Trần Nhật",
+        "img_path": [
+            "112.jpg",
+            "113.jpg",
+            "114.jpg"
+        ]
+    },
+    {
+        "start_time": 530,
+        "end_time": 540,
+        "text": "Duật về phố chợ gạo phường hàng bườm quận hoàng kiếm sau đó khách bảo quên hộ chiếu tại xế còn yêu cầu thêm 500.000đ để trả lại qua xác minh chiếc xe ô tô",
+        "img_path": [
+            "115.jpg",
+            "116.jpg"
+        ]
+    },
+    {
+        "start_time": 540,
+        "end_time": 550,
+        "text": "từng chạy cho một hãng taxi Tuy nhiên xe này đã sang nhượng cho người khác cách đây 2 năm và hiện không còn chạy cho hãng xe mặc dù vậy xe taxi này chưa bốc số hot của hãng và đang thuộc diện chạy",
+        "img_path": [
+            "117.jpg",
+            "118.jpg"
+        ]
+    },
+    {
+        "start_time": 550,
+        "end_time": 560,
+        "text": "chui trong phần tiếp theo xe Bí mất lái tông vào nhiều phương tiện khiến ít nhất 11 người thiệt",
+        "img_path": [
+            "119.jpg"
+        ]
+    },
+    {
+        "start_time": 560,
+        "end_time": 570,
+        "text": "mạng đến mạc Hà tỉnh Hắc Long Giang Trung Quốc ngắm hiện tượng cực",
+        "img_path": [
+            "120.jpg",
+            "121.jpg"
+        ]
+    },
+    {
+        "start_time": 570,
+        "end_time": 580,
+        "text": "quan nhà chiếc rách địa phương ngày 12 tháng 5 cho biết mưa lớn ngày lũ lục và lỡ đất ở tỉnh Tây sumatra của Indonesia đã khiến ít nhất 3 người thiệt mạng và",
+        "img_path": [
+            "122.jpg"
+        ]
+    },
+    {
+        "start_time": 580,
+        "end_time": 590,
+        "text": "nhiều người khác mất tích mưa lớn và lỡ đất từ dòng dung nham lạnh từ trên núi Mari đã khiến một dòng sông tràn bờ gây thiệt hại tại các ngôi",
+        "img_path": [
+            "123.jpg",
+            "124.jpg"
+        ]
+    },
+    {
+        "start_time": 590,
+        "end_time": 600,
+        "text": "làng ven núi ở huyện agam và tanata dung nhăm lạnh là hỗn hợp của vật chất núi lửa như tro cát và sỏi bị mưa cuốn chảy xuống sườn núi lửa nhà chứ trách cho",
+        "img_path": [
+            "125.jpg"
+        ]
+    },
+    {
+        "start_time": 600,
+        "end_time": 610,
+        "text": "biết lũ Lục đã cuốn trôi nhiều người và nhấn chìm hơn 100 ngôi nhà hàng chục người cũng bị thương do lũ quét và lực lượng h đang tìm kiếm những người mất",
+        "img_path": [
+            "126.jpg"
+        ]
+    },
+    {
+        "start_time": 610,
+        "end_time": 620,
+        "text": "tích chính quyền đã điều động thuyền cao su để tìm các nạn nhân mất tích và di tảng hàng chục người khác tới nơi trú ẩn tạm thời núi marap là ngọn núi lửa hoạt",
+        "img_path": [
+            "127.jpg",
+            "128.jpg"
+        ]
+    },
+    {
+        "start_time": 620,
+        "end_time": 630,
+        "text": "động mạnh nhất ở sumatra và là một trong gần 130 ngọn núi lửa đang hoạt động ở quần đảo Indonesia thảm họa xảy ra chỉ ha tháng sau khi mưa lớn gây ra lũ quét",
+        "img_path": [
+            "129.jpg"
+        ]
+    },
+    {
+        "start_time": 630,
+        "end_time": 640,
+        "text": "và lỡ đất ở các quận per selatan và badang pariaman tâ sumatra khiến ít nhất 21 người thiệt mạng và năm người khác",
+        "img_path": [
+            "130.jpg",
+            "131.jpg"
+        ]
+    },
+    {
+        "start_time": 640,
+        "end_time": 650,
+        "text": "mất tích cũng tại Indonesia vào hôm qua một chiếc xe buýt đã đâm vào nhiều ô tô và xe máy ở tỉnh Tây Java ít nhất 11 người thiệt mạng chủ yếu là học sinh và hàng",
+        "img_path": [
+            "132.jpg",
+            "133.jpg"
+        ]
+    },
+    {
+        "start_time": 650,
+        "end_time": 660,
+        "text": "chục người khác bị thương cảnh sát địa phương cho biết chiếc xe buýt chợ 61 học sinh và giáo viên đang trên đường quay trở lại một trường trung học ở thành phố deport",
+        "img_path": [
+            "134.jpg",
+            "135.jpg"
+        ]
+    },
+    {
+        "start_time": 660,
+        "end_time": 670,
+        "text": "Ngoại Ô thủ đô yakata từ khu nghỉ má pandon sau kỳ Lễ Tốt Nghiệp hệ thống phanh của chiếc xe dường như bị trục tr khiến nó mất kiểm soát và lau xuống một",
+        "img_path": [
+            "136.jpg",
+            "137.jpg"
+        ]
+    },
+    {
+        "start_time": 670,
+        "end_time": 680,
+        "text": "con đường dốc tông vào nhiều ô tô xe máy trước khi đâm vào một cột điện chính người thiệt mạng ngay tại hiện trường hai người khác tử vong sau đó tại bệnh viện trong đó có một giáo viên và một",
+        "img_path": [
+            "138.jpg",
+            "139.jpg",
+            "140.jpg",
+            "141.jpg"
+        ]
+    },
+    {
+        "start_time": 680,
+        "end_time": 690,
+        "text": "người đi xe máy 53 người khác phải nhập viện vì bị thương trong đó có một số đang trong tình trạng nguy kịnh tai nạn giao thông thường xuyên xảy ra ở Indonesia do tiêu chuẩn an toàn và cơ sở",
+        "img_path": [
+            "142.jpg"
+        ]
+    },
+    {
+        "start_time": 690,
+        "end_time": 700,
+        "text": "hạ Tần xuống cấp mới đây hiện tự cực quan xuất hiện đầy ngoạn mục tại khu vực phía Bắc Trung Quốc cảnh tượng với nhiều",
+        "img_path": [
+            "143.jpg",
+            "144.jpg"
+        ]
+    },
+    {
+        "start_time": 700,
+        "end_time": 710,
+        "text": "màu sắc thu hút rất nhiều người tới chiêm ngưỡng tại thành phố Mạc Hà tỉnh Hắc Long Giang nhiều du khách đã không để lỡ",
+        "img_path": [
+            "145.jpg",
+            "146.jpg"
+        ]
+    },
+    {
+        "start_time": 710,
+        "end_time": 720,
+        "text": "cơ hội hiếm hoi nhanh chóng ghi lại hình ảnh những làng sóng ánh sáng nhẹ múa chiếu sáng cả bầu trời đêm cảnh tượng tương tự cũng xuất hiện ở huyện hô Trung Tôi lái xe từ Bắc Kinh đến đây và",
+        "img_path": [
+            "147.jpg",
+            "148.jpg"
+        ]
+    },
+    {
+        "start_time": 720,
+        "end_time": 730,
+        "text": "cuối cùng cũng thấy được cực quan thật tuyệt vời và ấn tượng tôi đã làn lỗi đến đây để chêm ngưỡng đây là lần đầu tiên tôi được nhìn thấy hiện tượng thiên",
+        "img_path": [
+            "149.jpg",
+            "150.jpg"
+        ]
+    },
+    {
+        "start_time": 730,
+        "end_time": 740,
+        "text": "nhiên mà ở quê tôi không có nó rất đẹp cực quan được tạo ra do sự va chạm của các hạt tích điện đỉnh hướng bởi từ trường trái đất hiện tượng này có thể",
+        "img_path": [
+            "151.jpg",
+            "152.jpg"
+        ]
+    },
+    {
+        "start_time": 740,
+        "end_time": 750,
+        "text": "quan sát được rõ nhất ở những khu vực gần Cực bắt trái đất tại Trung Quốc Thành Phố Mạc Hà đã nhiều lần ghi nhận hiện tượng cực quan Kể từ đầu năm",
+        "img_path": [
+            "153.jpg"
+        ]
+    },
+    {
+        "start_time": 750,
+        "end_time": 760,
+        "text": "nay từ việc cùng nhau chia sẻ thức ăn cùng nhau ngủ trưa cho tới cả hợp mặt gia đình một người đàn ông ở Libya đã nhận nuôi một con sư tử làm thú cưng",
+        "img_path": [
+            "154.jpg",
+            "155.jpg",
+            "156.jpg"
+        ]
+    },
+    {
+        "start_time": 760,
+        "end_time": 770,
+        "text": "trong nhà của mình để bầu bạn tại ngôi nhà ở tu đô tripoli anh abdel fatah Anadi cho biết việc nuôi loài vật săn mồi này là một sở thích khá",
+        "img_path": [
+            "157.jpg"
+        ]
+    },
+    {
+        "start_time": 770,
+        "end_time": 780,
+        "text": "nguy hiểm và cần nhiều sự can đảm Tuy nhiên anh tin rằng chú tể sân Lâm vẫn là loài vật tràn đầy tình yêu thương và thân thiện với con người phụ thuộc vào",
+        "img_path": [
+            "158.jpg",
+            "159.jpg"
+        ]
+    },
+    {
+        "start_time": 780,
+        "end_time": 790,
+        "text": "cách chúng được đối xử và chăm sóc khi lớn lên anh có kinh nghiệm nuôi sư tử từ năm 16 tuổi còn ở thời điểm hiện tại anh Sandy đang nuôi một chú sư tử con 1 tuổi",
+        "img_path": [
+            "160.jpg",
+            "161.jpg"
+        ]
+    },
+    {
+        "start_time": 790,
+        "end_time": 800,
+        "text": "rưỡi trong khu vườn của mình anh Sandy cho biết giai đoạn khó khăn khi nuôi sư tử bắt đầu lộ trõ ở đoạn nó một tuổi",
+        "img_path": [
+            "162.jpg"
+        ]
+    },
+    {
+        "start_time": 800,
+        "end_time": 810,
+        "text": "rưỡi Nhưng anh khẳng định mối quan hệ của họ là một điều gì đó tuyệt vời và không thể diễn tả thành",
+        "img_path": [
+            "163.jpg",
+            "164.jpg",
+            "165.jpg"
+        ]
+    },
+    {
+        "start_time": 810,
+        "end_time": 820,
+        "text": "lời poster chính thức của Liên hoan phim Ken lần thứ 77 đã được công bố và treo phía trên trung tâm hội nghị ở ken trong ngày hôm qua",
+        "img_path": [
+            "166.jpg"
+        ]
+    },
+    {
+        "start_time": 820,
+        "end_time": 830,
+        "text": "hình ảnh poster năm nay được lấy từ bộ phim Nhật Bản rody in August năm 1991 của nhà làm phim Akira kurosawa bộ phim mang thông điệp sâu sắc về tình yêu sự",
+        "img_path": [
+            "167.jpg",
+            "168.jpg"
+        ]
+    },
+    {
+        "start_time": 830,
+        "end_time": 840,
+        "text": "chính trực và kiên cường khi đối mặt với chiến tranh được truyền tải theo phong cách dịu dàng và đã gây được tiếng vang mạnh mẽ với hình ảnh này liên Hoang phim",
+        "img_path": [
+            "169.jpg",
+            "170.jpg"
+        ]
+    },
+    {
+        "start_time": 840,
+        "end_time": 850,
+        "text": "Tái khẳng định niềm tin rằng điện ảnh là thánh đường toàn cầu là không gian để thể hiện và sẻ chia nơi tính nhân văn và qu tự do của con người được thể hiện một",
+        "img_path": [
+            "171.jpg"
+        ]
+    },
+    {
+        "start_time": 850,
+        "end_time": 860,
+        "text": "cách bình đẳng trong mọi khung hình các nhà tổ chức cho biết tấm poster cũng là minh chứng cho sức mạnh của điện ảnh mang lại tiếng nói cho tất cả mọi người và kêu gọi sự đoàn kết Liên hoan phim",
+        "img_path": [
+            "172.jpg",
+            "173.jpg"
+        ]
+    },
+    {
+        "start_time": 860,
+        "end_time": 870,
+        "text": "năm nay Quý tụ nhiều tác phẩm đặc sắc Mở màng vào ngày 14 tháng 5 với bộ phim hài Pháp The Second art của đạo diện ktin",
+        "img_path": [
+            "174.jpg",
+            "175.jpg"
+        ]
+    },
+    {
+        "start_time": 870,
+        "end_time": 880,
+        "text": "deer sự kiện sẽ kéo dài đến ngày 25 tháng 5 đêm qua trên quốc lộ 14 tỉnh Bình Phước xe khách va chạp với xe máy khiến một người tử vong tại chỗ khoảng Gần 23 giờ xe khách giường nằm lưu thông",
+        "img_path": [
+            "176.jpg"
+        ]
+    },
+    {
+        "start_time": 880,
+        "end_time": 890,
+        "text": "hướng từ thành phố Hồ Chí Minh đi tỉnh Đắc Nông khi xe chạy đến khu vực xã Đồng Tiến huyện Đồng Phú tông vào xe máy do một người đàn ông khoảng 45 tuổi ng tỉnh",
+        "img_path": [
+            "177.jpg",
+            "178.jpg"
+        ]
+    },
+    {
+        "start_time": 890,
+        "end_time": 900,
+        "text": "Bình Phước điều khiển được cho là lưu thông theo chiều ngược lại nạn nhân tử vong tại chỗ nguyên nhân đang được điều tra làm",
+        "img_path": [
+            "179.jpg",
+            "180.jpg"
+        ]
+    },
+    {
+        "start_time": 900,
+        "end_time": 910,
+        "text": "rõ những thông tin vừa rồi cũng đã kết thúc chương trình 60 Giây sáng nay của chúng tôi Hẹn gặp lại quý vị trong chương trình 60 Giây chiều nay C bây giờ Xin kính chào tạm biệt",
+        "img_path": [
+            "181.jpg",
+            "182.jpg"
+        ]
+    },
+    {
+        "start_time": 910,
+        "end_time": 920,
+        "text": "[Vỗ tay] [âm nhạc]",
+        "img_path": [
+            "183.jpg"
+        ]
+    }
+]

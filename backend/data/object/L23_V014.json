@@ -1,0 +1,551 @@
+{
+    "001": [
+        "Person",
+        "Houseplant",
+        "Christmas tree",
+        "Palm tree",
+        "Plant",
+        "Tree"
+    ],
+    "002": [
+        "Person",
+        "Clothing",
+        "Palm tree",
+        "Plant",
+        "Tree",
+        "Building"
+    ],
+    "003": [
+        "Toy",
+        "Person"
+    ],
+    "004": [
+        "Person",
+        "Houseplant",
+        "Palm tree",
+        "Toy",
+        "Plant",
+        "Tree"
+    ],
+    "005": [
+        "Bicycle",
+        "Sports equipment",
+        "Person"
+    ],
+    "006": [
+        "Person",
+        "Flowerpot",
+        "Houseplant",
+        "Toy",
+        "Door",
+        "Bicycle",
+        "Land vehicle"
+    ],
+    "007": [
+        "Wheel",
+        "Person",
+        "Palm tree",
+        "Toy",
+        "Land vehicle",
+        "Tree",
+        "Car"
+    ],
+    "008": [
+        "Person",
+        "Palm tree",
+        "Toy",
+        "Tree",
+        "Car"
+    ],
+    "009": [
+        "Person",
+        "Houseplant",
+        "Palm tree",
+        "Toy",
+        "Plant",
+        "Tree",
+        "Building"
+    ],
+    "010": [
+        "Person",
+        "Houseplant",
+        "Christmas tree",
+        "Palm tree",
+        "Plant",
+        "Tree"
+    ],
+    "011": [
+        "Person",
+        "Toy",
+        "Land vehicle",
+        "Tree",
+        "Car"
+    ],
+    "012": [
+        "Toy",
+        "Christmas tree",
+        "Tree",
+        "Person"
+    ],
+    "013": [
+        "Person",
+        "Palm tree",
+        "Toy",
+        "Plant",
+        "Tree",
+        "Building"
+    ],
+    "014": [
+        "Wheel",
+        "Person",
+        "Houseplant",
+        "Palm tree",
+        "Toy",
+        "Plant",
+        "Tree"
+    ],
+    "015": [
+        "Plant",
+        "Toy",
+        "Tree",
+        "Person"
+    ],
+    "016": [
+        "Person",
+        "Houseplant",
+        "Palm tree",
+        "Toy",
+        "Plant",
+        "Tree"
+    ],
+    "017": [
+        "Person",
+        "Toy",
+        "Plant",
+        "Tree",
+        "Car"
+    ],
+    "018": [
+        "Person",
+        "Traffic sign",
+        "Skyscraper",
+        "Vehicle",
+        "Tree"
+    ],
+    "019": [
+        "Traffic sign",
+        "Skyscraper",
+        "Tree",
+        "Person"
+    ],
+    "020": [
+        "Person",
+        "Houseplant",
+        "Snowmobile",
+        "Plant",
+        "Land vehicle"
+    ],
+    "021": [
+        "Person",
+        "Motorcycle",
+        "Houseplant",
+        "Snowmobile",
+        "Plant",
+        "Land vehicle"
+    ],
+    "022": [
+        "Wheel",
+        "Motorcycle",
+        "Person",
+        "Land vehicle",
+        "Tree"
+    ],
+    "023": [
+        "Wheel",
+        "Person",
+        "Flowerpot",
+        "Houseplant",
+        "Bicycle helmet",
+        "Bicycle wheel",
+        "Bicycle"
+    ],
+    "024": [
+        "Wheel",
+        "Person",
+        "Segway",
+        "Bicycle helmet",
+        "Bicycle"
+    ],
+    "025": [
+        "Wheel",
+        "Person",
+        "Bicycle wheel",
+        "Bicycle",
+        "Land vehicle",
+        "Car"
+    ],
+    "026": [
+        "Tree",
+        "Person"
+    ],
+    "027": [
+        "Person",
+        "Houseplant",
+        "Palm tree",
+        "Toy",
+        "Flower",
+        "Tree"
+    ],
+    "028": [
+        "Person",
+        "Palm tree",
+        "Toy",
+        "Plant",
+        "Tree"
+    ],
+    "029": [
+        "Tree",
+        "Person"
+    ],
+    "030": [
+        "Wheel",
+        "Person",
+        "Houseplant",
+        "Toy",
+        "Plant",
+        "Land vehicle",
+        "Tree"
+    ],
+    "031": [
+        "Person",
+        "Houseplant",
+        "Clothing",
+        "Toy",
+        "Plant",
+        "Tree"
+    ],
+    "032": [
+        "Plant",
+        "Toy",
+        "Tree",
+        "Person"
+    ],
+    "033": [
+        "Toy",
+        "Tree",
+        "Person"
+    ],
+    "034": [
+        "Plant",
+        "Houseplant",
+        "Toy",
+        "Person"
+    ],
+    "035": [
+        "Plant",
+        "Toy",
+        "Tree",
+        "Person"
+    ],
+    "036": [
+        "Land vehicle",
+        "Toy",
+        "Person"
+    ],
+    "037": [
+        "Person",
+        "Houseplant",
+        "Toy",
+        "Plant",
+        "Tree"
+    ],
+    "038": [
+        "Flag",
+        "Person",
+        "Toy",
+        "Plant",
+        "Tree"
+    ],
+    "039": [
+        "Person",
+        "Wheel",
+        "Tree",
+        "Car"
+    ],
+    "040": [
+        "Person",
+        "Wheel",
+        "Bicycle",
+        "Car"
+    ],
+    "041": [
+        "Flag",
+        "Person",
+        "Toy",
+        "Bicycle",
+        "Land vehicle"
+    ],
+    "042": [
+        "Toy",
+        "Tree",
+        "Person"
+    ],
+    "043": [
+        "Land vehicle",
+        "Tree",
+        "Person"
+    ],
+    "044": [
+        "Clothing",
+        "Toy",
+        "Wheel",
+        "Person"
+    ],
+    "045": [
+        "Land vehicle",
+        "Tree",
+        "Person"
+    ],
+    "046": [
+        "Wheel",
+        "Person",
+        "Clothing",
+        "Bicycle",
+        "Umbrella",
+        "Land vehicle",
+        "Car"
+    ],
+    "047": [
+        "Footwear",
+        "Person",
+        "Wheel",
+        "Football helmet",
+        "Clothing",
+        "Bicycle helmet",
+        "Bicycle wheel",
+        "Bicycle",
+        "Car"
+    ],
+    "048": [
+        "Wheel",
+        "Motorcycle",
+        "Person",
+        "Bicycle",
+        "Car"
+    ],
+    "049": [
+        "Wheel",
+        "Motorcycle",
+        "Person",
+        "Clothing",
+        "Bicycle",
+        "Car"
+    ],
+    "050": [
+        "Bicycle",
+        "Land vehicle",
+        "Person"
+    ],
+    "051": [
+        "Tire",
+        "Wheel",
+        "Person",
+        "Bicycle wheel",
+        "Bicycle"
+    ],
+    "052": [
+        "Tire",
+        "Wheel",
+        "Person",
+        "Bicycle wheel",
+        "Bicycle"
+    ],
+    "053": [
+        "Bicycle wheel",
+        "Bicycle",
+        "Person"
+    ],
+    "054": [
+        "Man",
+        "Person",
+        "Wheel",
+        "Bicycle helmet",
+        "Bicycle wheel",
+        "Bicycle"
+    ],
+    "055": [
+        "Wheel",
+        "Person",
+        "Bicycle helmet",
+        "Bicycle wheel",
+        "Bicycle"
+    ],
+    "056": [
+        "Bicycle wheel",
+        "Bicycle",
+        "Wheel",
+        "Person"
+    ],
+    "057": [
+        "Wheel",
+        "Person",
+        "Football helmet",
+        "Bicycle wheel",
+        "Bicycle",
+        "Land vehicle"
+    ],
+    "058": [
+        "Wheel",
+        "Person",
+        "Helmet",
+        "Bicycle wheel",
+        "Bicycle"
+    ],
+    "059": [
+        "Tire",
+        "Wheel",
+        "Person",
+        "Motorcycle",
+        "Sports equipment",
+        "Bicycle helmet",
+        "Bicycle wheel",
+        "Bicycle"
+    ],
+    "060": [
+        "Bicycle wheel",
+        "Bicycle",
+        "Car",
+        "Person"
+    ],
+    "061": [
+        "Wheel",
+        "Person",
+        "Clothing",
+        "Bicycle",
+        "Car"
+    ],
+    "062": [
+        "Bicycle",
+        "Person"
+    ],
+    "063": [
+        "Wheel",
+        "Person",
+        "Football helmet",
+        "Clothing",
+        "Helmet",
+        "Bicycle wheel",
+        "Bicycle"
+    ],
+    "064": [
+        "Wheel",
+        "Person",
+        "Man",
+        "Bicycle wheel",
+        "Bicycle",
+        "Umbrella"
+    ],
+    "065": [
+        "Bicycle wheel",
+        "Bicycle",
+        "Wheel",
+        "Person"
+    ],
+    "066": [
+        "Bicycle wheel",
+        "Bicycle",
+        "Person"
+    ],
+    "067": [
+        "Bicycle wheel",
+        "Bicycle",
+        "Wheel",
+        "Person"
+    ],
+    "068": [
+        "Person"
+    ],
+    "069": [
+        "Bicycle wheel",
+        "Bicycle",
+        "Wheel",
+        "Person"
+    ],
+    "070": [
+        "Wheel",
+        "Person",
+        "Bicycle wheel",
+        "Bicycle",
+        "Land vehicle",
+        "Umbrella"
+    ],
+    "071": [
+        "Tire",
+        "Wheel",
+        "Person",
+        "Bicycle wheel",
+        "Bicycle"
+    ],
+    "072": [
+        "Bicycle wheel",
+        "Bicycle",
+        "Tire",
+        "Wheel"
+    ],
+    "073": [
+        "Mobile phone",
+        "Person"
+    ],
+    "074": [
+        "Flag",
+        "Wheel",
+        "Person",
+        "Bicycle",
+        "Umbrella"
+    ],
+    "075": [
+        "Wheel",
+        "Person",
+        "Helmet",
+        "Bicycle wheel",
+        "Bicycle"
+    ],
+    "076": [
+        "Wheel",
+        "Person",
+        "Bicycle helmet",
+        "Bicycle wheel",
+        "Bicycle"
+    ],
+    "077": [
+        "Wheel",
+        "Person",
+        "Bicycle helmet",
+        "Bicycle wheel",
+        "Bicycle"
+    ],
+    "078": [
+        "Wheel",
+        "Person",
+        "Man",
+        "Helmet",
+        "Bicycle wheel",
+        "Bicycle"
+    ],
+    "079": [
+        "Tire",
+        "Wheel",
+        "Person",
+        "Human face",
+        "Sports equipment",
+        "Bicycle wheel",
+        "Bicycle"
+    ],
+    "080": [
+        "Flag",
+        "Footwear",
+        "Person",
+        "Poster",
+        "Sports equipment"
+    ]
+}

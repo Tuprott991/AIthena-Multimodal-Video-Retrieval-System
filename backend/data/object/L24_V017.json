@@ -1,0 +1,369 @@
+{
+    "001": [
+        "Person",
+        "Clothing",
+        "Toy",
+        "Sculpture",
+        "Tree",
+        "Building"
+    ],
+    "002": [
+        "Poster"
+    ],
+    "003": [
+        "Man",
+        "Person",
+        "Tree",
+        "Clothing",
+        "Window",
+        "Building"
+    ],
+    "004": [
+        "Lantern"
+    ],
+    "005": [
+        "Person",
+        "Snack",
+        "Toy",
+        "Street light",
+        "Tree",
+        "Fast food"
+    ],
+    "006": [
+        "Fashion accessory",
+        "Vehicle",
+        "Owl"
+    ],
+    "007": [
+        "Toy",
+        "Street light"
+    ],
+    "008": [
+        "Person",
+        "Human face",
+        "Woman",
+        "Clothing"
+    ],
+    "009": [
+        "Person",
+        "Clothing",
+        "Toy",
+        "Animal",
+        "Sculpture",
+        "Tree"
+    ],
+    "010": [
+        "Person",
+        "Chair",
+        "Christmas tree",
+        "Clothing",
+        "Toy",
+        "Tree"
+    ],
+    "011": [
+        "Animal",
+        "Camel",
+        "Toy",
+        "Mushroom",
+        "Sculpture",
+        "Tree"
+    ],
+    "012": [
+        "Carnivore",
+        "Animal"
+    ],
+    "013": [
+        "Human face",
+        "Toy",
+        "Tree",
+        "Street light"
+    ],
+    "014": [
+        "Building",
+        "Lantern",
+        "Tree",
+        "Street light"
+    ],
+    "015": [
+        "Boy",
+        "Woman",
+        "Clothing",
+        "Girl",
+        "Human face"
+    ],
+    "016": [
+        "Person",
+        "Woman",
+        "Clothing",
+        "Human face",
+        "Human head"
+    ],
+    "017": [
+        "Flag",
+        "Vase",
+        "Person",
+        "Clothing",
+        "Plant",
+        "Human face"
+    ],
+    "018": [
+        "Dress",
+        "Person",
+        "Clothing",
+        "Plant",
+        "Human face",
+        "Flower"
+    ],
+    "019": [
+        "Man",
+        "Person",
+        "Clothing",
+        "Poster",
+        "Plant",
+        "Human face",
+        "Tree"
+    ],
+    "020": [
+        "Flower",
+        "Lantern",
+        "Toy"
+    ],
+    "021": [
+        "Toy",
+        "Tree"
+    ],
+    "022": [
+        "Person",
+        "Woman",
+        "Man",
+        "Clothing"
+    ],
+    "023": [
+        "Man",
+        "Boy",
+        "Woman",
+        "Clothing",
+        "Human face"
+    ],
+    "024": [
+        "Human face",
+        "Woman",
+        "Man",
+        "Clothing"
+    ],
+    "025": [
+        "Human face",
+        "Woman",
+        "Man",
+        "Clothing"
+    ],
+    "026": [
+        "Glasses",
+        "Man",
+        "Boy",
+        "Woman",
+        "Clothing",
+        "Girl",
+        "Human face"
+    ],
+    "027": [
+        "Man",
+        "Microphone",
+        "Woman",
+        "Clothing",
+        "Human face"
+    ],
+    "028": [
+        "Person",
+        "Clothing",
+        "Building"
+    ],
+    "029": [
+        "Man",
+        "Person",
+        "Woman",
+        "Clothing",
+        "Human nose",
+        "Girl",
+        "Human face"
+    ],
+    "030": [
+        "Footwear",
+        "Man",
+        "Woman",
+        "Clothing",
+        "Girl",
+        "Human face"
+    ],
+    "031": [
+        "Clothing",
+        "Toy",
+        "Lantern",
+        "Street light"
+    ],
+    "032": [
+        "Street light",
+        "Toy",
+        "Person"
+    ],
+    "033": [
+        "Glasses",
+        "Man",
+        "Boy",
+        "Woman",
+        "Clothing",
+        "Girl",
+        "Human face"
+    ],
+    "034": [
+        "Glasses",
+        "Man",
+        "Boy",
+        "Woman",
+        "Clothing",
+        "Girl",
+        "Human face"
+    ],
+    "035": [
+        "Person",
+        "Toy",
+        "Lantern",
+        "Building"
+    ],
+    "036": [
+        "Man",
+        "Person",
+        "Woman",
+        "Clothing",
+        "Girl",
+        "Human face"
+    ],
+    "037": [
+        "Glasses",
+        "Man",
+        "Boy",
+        "Woman",
+        "Clothing",
+        "Girl",
+        "Human face"
+    ],
+    "038": [
+        "Clothing",
+        "Person"
+    ],
+    "039": [
+        "Clothing",
+        "Human face",
+        "Person"
+    ],
+    "040": [
+        "Glasses",
+        "Man",
+        "Boy",
+        "Woman",
+        "Clothing",
+        "Girl",
+        "Human face"
+    ],
+    "041": [
+        "Tie",
+        "Man",
+        "Hat",
+        "Clothing",
+        "Sun hat",
+        "Human face",
+        "Tree"
+    ],
+    "042": [
+        "Man",
+        "Hat",
+        "Sun hat",
+        "Clothing",
+        "Human face",
+        "Tree"
+    ],
+    "043": [
+        "Person",
+        "Human face",
+        "Man",
+        "Clothing"
+    ],
+    "044": [
+        "Glasses",
+        "Man",
+        "Person",
+        "Clothing",
+        "Human face",
+        "Camera"
+    ],
+    "045": [
+        "Man",
+        "Person",
+        "Clothing",
+        "Fashion accessory",
+        "Human face"
+    ],
+    "046": [
+        "Human face",
+        "Woman",
+        "Man",
+        "Clothing"
+    ],
+    "047": [
+        "Clothing",
+        "Woman",
+        "Man",
+        "Person"
+    ],
+    "048": [
+        "Tie",
+        "Man",
+        "Hat",
+        "Clothing",
+        "Sun hat",
+        "Human face",
+        "Vehicle",
+        "Tree"
+    ],
+    "049": [
+        "Man",
+        "Person",
+        "Clothing",
+        "Human face",
+        "Flower"
+    ],
+    "050": [
+        "Man",
+        "Person",
+        "Clothing",
+        "Human face",
+        "Bowling equipment"
+    ],
+    "051": [],
+    "052": [
+        "Plant",
+        "Flower",
+        "Tree",
+        "Person"
+    ],
+    "053": [
+        "Flower",
+        "Tree"
+    ],
+    "054": [
+        "Lantern",
+        "Person",
+        "Dog",
+        "Clothing",
+        "Toy",
+        "Flower"
+    ],
+    "055": [],
+    "056": [
+        "Flower",
+        "Office supplies"
+    ],
+    "057": [
+        "Flag"
+    ]
+}

@@ -1,0 +1,137 @@
+<html>
+
+<head>
+  <link rel="icon" href="https://i.pinimg.com/736x/26/60/ef/2660ef691c59d1e0e3f2628eaec4adcf.jpg" type="image/png">
+  <link rel="stylesheet" href="{{ url_for('static',filename='css/style.css') }}">
+</head>
+
+<header>
+  <meta charset="utf-8">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <title>AIthena team</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@700&family=Raleway:wght@700&display=swap">
+</header>
+
+<body onload="on_load();">
+  <div class="container">
+    <div class="search_container">
+
+      <div class="logo-container">
+        <a href="/" class="logo">
+          <span class="logo-ai">AI</span><span class="logo-thena">thena</span>
+        </a>
+      </div>
+
+      <div class="search">
+        <label for="">
+          <i class="fa fa-search" aria-hidden="true"></i>
+        </label>
+        <input id="text_query" type="text" placeholder="Text query">
+      </div>
+
+
+      <div class="group_btn">
+        <button class="custom-btn btn-13" onclick="search();"> <span>Search</span></button>
+      </div>
+
+      <div class="cq_checkbox" style="display: inline-block; margin-left: 10px;">
+        <input type="checkbox" id="cq" name="cq">
+        <label for="cq">CQ</label>
+      </div>
+
+
+
+    </div>
+
+
+    <!-- <div style="height: 5px; width: 100%; background-color: black; margin-bottom: 5px; margin-top: 5px;"></div> -->
+    <div id="div_img">
+
+    </div>
+
+    <div id="div_button" style="padding: 20px;">
+      <!-- Checkbox faiss -->
+      <input type="checkbox" id="faiss" name="faiss">
+      <label for="faiss">faiss (CLIP model)</label><br><br>
+
+      <!-- Checkbox OCR -->
+      <input type="checkbox" id="ocr" name="ocr" onclick="toggleTextBox('ocr')">
+      <label for="ocr">OCR</label><br><br>
+
+      <!-- Checkbox subtitle -->
+      <input type="checkbox" id="subtitle" name="subtitle" onclick="toggleTextBox('subtitle')">
+      <label for="subtitle">Subtitle</label><br><br>
+
+      <!-- Dynamic Text Boxes -->
+      <div id="text_boxes" style="display: none; margin-top: 10px;">
+        <div id="keyword_container" style="display: none;">
+          <label for="keywords">Keywords:</label>
+          <input type="text" id="keywords" name="keywords"><br><br>
+        </div>
+        <div id="image_count_container" style="display: none;">
+          <label for="num_images">Số hình k:</label>
+          <input type="text" id="num_images" name="num_images"><br><br>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="obj_filter" style="margin-top: 20px;">
+      <h3>Object filter</h3>
+      <div id="search-container">
+        <div id="selected-items"></div> <!-- Vùng hiển thị các mục đã chọn -->
+        <input type="text" id="search" placeholder="Enter keywords..." autocomplete="off"
+          style="width: 15%; margin-bottom: 10px;">
+        <div id="suggestions-box"></div>
+      </div>
+
+      <!-- Biểu mẫu để gửi dữ liệu về server -->
+      <form action="/filter" method="POST">
+        <!-- Input ẩn để chứa các mục đã chọn -->
+        <input type="hidden" name="selected_items" id="selected-items-input">
+
+        <button type="submit" id="submit-btn" class="custom-btn btn-13" style="width: 100%;top: 5px">Filter by
+          object</button>
+      </form>
+    </div>
+
+    <div style="height: 5px; width: 100%; background-color: black;"></div>
+    <div id=" ">
+
+    </div>
+    <div id="div_total_page">Total: 1200 page</div>
+    <div style="margin-bottom: 50px;"></div>
+
+
+
+
+    <script>
+
+      var data = '{{ data|tojson }}';
+      data = data.replace(/\s/g, '');
+      data = data.replace(/\\/g, '/');
+      data = JSON.parse(data);
+      let btn_knn = document.getElementsByClassName("btn_knn");
+      let btn_select = document.getElementsByClassName("btn_select");
+      let hoverImg = document.getElementsByClassName("hoverImg");
+
+      const search1Input = document.getElementById('search');
+      const suggestionsBox = document.getElementById('suggestions-box');
+      const selectedItemsContainer = document.getElementById('selected-items');
+      const submitBtn = document.getElementById('submit-btn');
+      let suggestions = [];
+      let selectedItems = [];
+
+
+
+    </script>
+
+  </div>
+  <script src="{{ url_for('static',filename='js/script.js') }}">
+  </script>
+</body>
+
+</html>

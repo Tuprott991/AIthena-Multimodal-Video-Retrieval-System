@@ -1,0 +1,14 @@
+/data/images
+/data/image
+/data/newFeatures
+faiss_normal_ViT.bin
+utils/__pycache__/faiss.cpython-311.pyc
+utils/__pycache__/query_processing.cpython-311.pyc
+__pycache__/mapping.cpython-311.pyc
+filterobj/__pycache__/filterobj.cpython-311.pyc
+__pycache__/
+data/.DS_Store
+pre_faiss_normal_ViT.bin
+demo.py
+openai_func.py
+test.py

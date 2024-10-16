@@ -1,0 +1,483 @@
+{
+    "001": [
+        "Person",
+        "Table",
+        "Toy",
+        "Swimming pool",
+        "Building"
+    ],
+    "002": [
+        "Man",
+        "Person",
+        "Clothing",
+        "Human face",
+        "Swimwear"
+    ],
+    "003": [
+        "Person",
+        "Man",
+        "Clothing"
+    ],
+    "004": [
+        "Person",
+        "Man",
+        "Clothing"
+    ],
+    "005": [
+        "Clothing",
+        "Human face",
+        "Person"
+    ],
+    "006": [
+        "Person",
+        "Human face",
+        "Man",
+        "Clothing"
+    ],
+    "007": [
+        "Clothing",
+        "Land vehicle",
+        "Human face",
+        "Person"
+    ],
+    "008": [
+        "Person",
+        "Clothing"
+    ],
+    "009": [
+        "Person",
+        "Woman",
+        "Human face",
+        "Clothing"
+    ],
+    "010": [
+        "Balloon",
+        "Man",
+        "Person",
+        "Clothing",
+        "Toy",
+        "Human face"
+    ],
+    "011": [
+        "Man",
+        "Person",
+        "Clothing",
+        "Toy",
+        "Human face"
+    ],
+    "012": [
+        "Building",
+        "Toy",
+        "Swimming pool",
+        "Person"
+    ],
+    "013": [
+        "Toy",
+        "Swimming pool",
+        "Person"
+    ],
+    "014": [
+        "Man",
+        "Person",
+        "Clothing",
+        "Human face",
+        "Flower",
+        "Drum"
+    ],
+    "015": [
+        "Person",
+        "Woman",
+        "Clothing",
+        "Human face",
+        "Flower",
+        "Drum"
+    ],
+    "016": [
+        "Person",
+        "Fashion accessory",
+        "Christmas tree",
+        "Street light"
+    ],
+    "017": [
+        "Gondola",
+        "Person",
+        "Christmas tree",
+        "Street light"
+    ],
+    "018": [
+        "Person",
+        "Toy",
+        "Man",
+        "Clothing"
+    ],
+    "019": [
+        "Clothing",
+        "Toy",
+        "Person"
+    ],
+    "020": [
+        "Person",
+        "Toy",
+        "Clothing"
+    ],
+    "021": [
+        "Man",
+        "Person",
+        "Clothing",
+        "Toy",
+        "Building"
+    ],
+    "022": [
+        "Clothing",
+        "Toy",
+        "Man",
+        "Person"
+    ],
+    "023": [
+        "Clothing",
+        "Toy",
+        "Person"
+    ],
+    "024": [
+        "Man",
+        "Person",
+        "Clothing",
+        "Toy",
+        "Human face"
+    ],
+    "025": [
+        "Clothing",
+        "Toy",
+        "Person"
+    ],
+    "026": [
+        "Man",
+        "Person",
+        "Clothing",
+        "Toy",
+        "Human face"
+    ],
+    "027": [
+        "Man",
+        "Person",
+        "Clothing",
+        "Toy",
+        "Animal",
+        "Human face"
+    ],
+    "028": [
+        "Man",
+        "Person",
+        "Clothing",
+        "Toy",
+        "Human face"
+    ],
+    "029": [
+        "Person",
+        "Woman",
+        "Clothing",
+        "Toy",
+        "Human face"
+    ],
+    "030": [
+        "Clothing",
+        "Toy",
+        "Man",
+        "Person"
+    ],
+    "031": [
+        "Swimming pool",
+        "Person"
+    ],
+    "032": [
+        "Building",
+        "Clothing",
+        "Swimming pool",
+        "Person"
+    ],
+    "033": [
+        "Swimming pool",
+        "Person"
+    ],
+    "034": [
+        "Building",
+        "Table",
+        "Swimming pool",
+        "Person"
+    ],
+    "035": [
+        "Balloon",
+        "Toy"
+    ],
+    "036": [
+        "Balloon"
+    ],
+    "037": [
+        "Street light",
+        "Person",
+        "Building"
+    ],
+    "038": [
+        "Clothing",
+        "Toy",
+        "Person"
+    ],
+    "039": [
+        "Clothing",
+        "Person"
+    ],
+    "040": [
+        "Building",
+        "Flower",
+        "Person"
+    ],
+    "041": [
+        "Clothing",
+        "Man",
+        "Person"
+    ],
+    "042": [
+        "Fashion accessory",
+        "Doll",
+        "Person"
+    ],
+    "043": [
+        "Owl",
+        "Person"
+    ],
+    "044": [
+        "Flower",
+        "Person"
+    ],
+    "045": [
+        "Table",
+        "Clothing",
+        "Person"
+    ],
+    "046": [
+        "Man",
+        "Person",
+        "Boy",
+        "Clothing",
+        "Toy"
+    ],
+    "047": [
+        "Footwear",
+        "Person",
+        "Man",
+        "Boy",
+        "Clothing",
+        "Human face"
+    ],
+    "048": [
+        "Man",
+        "Person",
+        "Boy",
+        "Clothing",
+        "Human face"
+    ],
+    "049": [
+        "Swimming pool",
+        "Person"
+    ],
+    "050": [
+        "Building",
+        "Toy",
+        "Swimming pool",
+        "Person"
+    ],
+    "051": [
+        "Owl"
+    ],
+    "052": [
+        "Human face",
+        "Toy",
+        "Person"
+    ],
+    "053": [
+        "Clothing",
+        "Toy",
+        "Human face",
+        "Person"
+    ],
+    "054": [
+        "Person",
+        "Clothing",
+        "Poster",
+        "Toy",
+        "Human face",
+        "Flower"
+    ],
+    "055": [
+        "Balloon",
+        "Flag",
+        "Drink",
+        "Dog"
+    ],
+    "056": [
+        "Lantern",
+        "Person",
+        "Clothing",
+        "Toy",
+        "Balloon"
+    ],
+    "057": [
+        "Plant",
+        "Building",
+        "Sculpture",
+        "Person"
+    ],
+    "058": [
+        "Plant",
+        "Flower",
+        "Person"
+    ],
+    "059": [
+        "Person",
+        "Clothing",
+        "Plant",
+        "Flower",
+        "Building"
+    ],
+    "060": [
+        "Plant",
+        "Building",
+        "Clothing",
+        "Person"
+    ],
+    "061": [
+        "Plant",
+        "Building",
+        "Person"
+    ],
+    "062": [
+        "Plant",
+        "Street light",
+        "Person"
+    ],
+    "063": [
+        "Plant",
+        "Building",
+        "Person"
+    ],
+    "064": [
+        "Flag",
+        "Person",
+        "Clothing",
+        "Table",
+        "Flower",
+        "Building"
+    ],
+    "065": [
+        "Street light",
+        "Person"
+    ],
+    "066": [
+        "Street light",
+        "Clothing",
+        "Tree",
+        "Person"
+    ],
+    "067": [
+        "Man",
+        "Person",
+        "Clothing",
+        "Plant",
+        "Swimming pool",
+        "Building"
+    ],
+    "068": [
+        "Man",
+        "Person",
+        "Clothing",
+        "Toy",
+        "Human face"
+    ],
+    "069": [
+        "Man",
+        "Person",
+        "Boy",
+        "Woman",
+        "Clothing",
+        "Toy",
+        "Human face"
+    ],
+    "070": [
+        "Person",
+        "Man",
+        "Clothing"
+    ],
+    "071": [
+        "Man",
+        "Person",
+        "Clothing",
+        "Flower",
+        "Bowling equipment",
+        "Tree"
+    ],
+    "072": [
+        "Man",
+        "Person",
+        "Wheel",
+        "Boy",
+        "Woman",
+        "Clothing",
+        "Human face"
+    ],
+    "073": [
+        "Man",
+        "Person",
+        "Clothing",
+        "Human face",
+        "Drum"
+    ],
+    "074": [
+        "Swimming pool",
+        "Person"
+    ],
+    "075": [
+        "Swimming pool",
+        "Person"
+    ],
+    "076": [
+        "Swimming pool",
+        "Person"
+    ],
+    "077": [
+        "Man",
+        "Person",
+        "Clothing",
+        "Table",
+        "Toy",
+        "Plant"
+    ],
+    "078": [
+        "Table",
+        "Toy",
+        "Clothing",
+        "Person"
+    ],
+    "079": [
+        "Man",
+        "Person",
+        "Footwear",
+        "Clothing",
+        "Plant"
+    ],
+    "080": [
+        "Footwear",
+        "Person",
+        "Man",
+        "Woman",
+        "Clothing",
+        "Plant"
+    ],
+    "081": [
+        "Marine mammal",
+        "Fish"
+    ],
+    "082": [],
+    "083": [
+        "Honeycomb"
+    ]
+}

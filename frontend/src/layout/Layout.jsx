@@ -1,0 +1,19 @@
+import Nav from "../components/Nav";
+import Aside from "../components/Aside";
+import Iframe from "../components/Iframe";
+import Main from "../components/Main";
+import Footer from "../components/Footer";
+
+const Layout = () => {
+ return (
+  <div className="antialiased bg-gray-50 dark:bg-gray-900 h-full overflow-auto">
+   <Nav></Nav>
+   <Aside></Aside>
+   <Main></Main>
+   <Footer></Footer>
+   <Iframe></Iframe>
+  </div>
+ );
+};
+
+export default Layout;

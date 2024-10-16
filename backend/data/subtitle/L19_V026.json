@@ -1,0 +1,887 @@
+[
+    {
+        "start_time": 10,
+        "end_time": 20,
+        "text": "Kính chào quý vị đến với chương trình 60 giây của đài truyền hình thành phố Hồ Chí Minh chương trình Sáng nay có những thông tin nổi bật sau",
+        "img_path": [
+            "004.jpg",
+            "005.jpg",
+            "006.jpg",
+            "007.jpg"
+        ]
+    },
+    {
+        "start_time": 20,
+        "end_time": 30,
+        "text": "đây tìm thấy 5/6 thi thể người bị vùi lấp do mưa lũ ở xã chiề Nơi huyện Mai Sơn Sơn La mưa lớn kèm theo gió mạnh làm",
+        "img_path": [
+            "008.jpg",
+            "009.jpg",
+            "010.jpg"
+        ]
+    },
+    {
+        "start_time": 30,
+        "end_time": 40,
+        "text": "hàng loạt trụ điện trung thế gãy đổ mất điện nhiều khu vực dự án nâng cấp mở rộng quốc lộ 91 với chi phí hơn 1000 tỷ đồng cho mỗi km [âm nhạc]",
+        "img_path": [
+            "011.jpg",
+            "012.jpg",
+            "013.jpg"
+        ]
+    },
+    {
+        "start_time": 40,
+        "end_time": 50,
+        "text": "thưa quý vị trong mấy ngày qua trên địa bàn tỉnh Sơn La có mưa to gây thiệt hại nặng nề về người tài sản và ngập úng nhiều điểm trên địa bàn đặc biệt tại xã",
+        "img_path": [
+            "014.jpg"
+        ]
+    },
+    {
+        "start_time": 50,
+        "end_time": 60,
+        "text": "chiền Nơi huyện Mai Sơn mưa lũ đã làm sáu người mất tích đến nay tất cả thi thể người bị vùi lắp do mưa lũ đã được tìm thấy tại địa điểm các bản hua pư và bá",
+        "img_path": [
+            "015.jpg",
+            "016.jpg"
+        ]
+    },
+    {
+        "start_time": 60,
+        "end_time": 70,
+        "text": "hốc xã chiền Nơi huyện Mai Sơn cán bộ chiến sĩ của ban chỉ huy quân sự huyện Mai Sơn bộ chỉ huy quân sự tỉnh Sơn La phối hợp với lực lượng địa phương chia",
+        "img_path": [
+            "017.jpg",
+            "018.jpg"
+        ]
+    },
+    {
+        "start_time": 70,
+        "end_time": 80,
+        "text": "làm nhiều bộ phận triển khai các hoạt động tìm kiếm cứu hộ cứu nạn đồng thời chỉ đạo các lực lượng thường trực dân quân tự vệ ban chí huy quân sự huyện Mai",
+        "img_path": [
+            "019.jpg",
+            "020.jpg",
+            "021.jpg"
+        ]
+    },
+    {
+        "start_time": 80,
+        "end_time": 90,
+        "text": "Sơn huy động 50 người vào tiếp cận địa bàn cùng với nhân dân khắc phục hậu quả bộ chỉ huy quân sự tỉnh đã lập tức chỉ đạo ban chủ quân sự huyện Mai",
+        "img_path": [
+            "022.jpg"
+        ]
+    },
+    {
+        "start_time": 90,
+        "end_time": 100,
+        "text": "Sơn huy động lực lượng cơ động tại chỗ của dân quân để đến 10 gi sáng ngày 25 đã tìm được",
+        "img_path": [
+            "023.jpg",
+            "024.jpg"
+        ]
+    },
+    {
+        "start_time": 100,
+        "end_time": 110,
+        "text": "một nạn nhân Cảm ơn các cán bộ tỉnh huyện xã đã đến động viên cùng gia đình khắc phục hậu quả bố chí huy quân sự tỉnh Sơn La đang chỉ đạo các lực lượng tiếp tục mở",
+        "img_path": [
+            "025.jpg"
+        ]
+    },
+    {
+        "start_time": 110,
+        "end_time": 120,
+        "text": "rộng khu vực tìm kiếm cố gắng hết sức để tìm thấy các nạn nhân trong thời gian sớm nhất tại Điện Biên trận lũ quét sẽ ra vào đêm 24 rạng sáng 25 tháng 7 tại xã",
+        "img_path": [
+            "026.jpg",
+            "027.jpg"
+        ]
+    },
+    {
+        "start_time": 120,
+        "end_time": 130,
+        "text": "mườn bồn huyện Điện Biên đã khiến hai người thiệt mạng năm người mất tích hàng chục ngôi nhà bị sạc lỡ vùi lấp và nước lũ cuốn rồi các lực lượ chức năng vẫn",
+        "img_path": [
+            "028.jpg",
+            "029.jpg",
+            "030.jpg"
+        ]
+    },
+    {
+        "start_time": 130,
+        "end_time": 140,
+        "text": "đang nỗ lực Tìm kiếm các nạn nhân và khắc phục hậu quả trận lũ quét gây ra sau trận lũ bất ngờ trong đêm bản mương phù một tan hoang chỉ còn bùng đất",
+        "img_path": [
+            "031.jpg"
+        ]
+    },
+    {
+        "start_time": 140,
+        "end_time": 150,
+        "text": "kê cối hiện năm người mất tích trong trận lũ quét vẫn chưa tìm thấy mưa lũ còn khiến cho bốn người bị thương 18 nhà bị lũ cuốn trôi và đổ sập 100 nhà bị ảnh",
+        "img_path": [
+            "032.jpg"
+        ]
+    },
+    {
+        "start_time": 150,
+        "end_time": 160,
+        "text": "hưởng hàng chục h lúa bị vừa lấp Quốc Lộ 12 bị chia CT hoàn toàn ước thiệt hại 24,5 tỷ đồng lực lượng chức năng dân đang nỗ lực Đệ kiế các nạn nhân mất tích",
+        "img_path": [
+            "033.jpg",
+            "034.jpg"
+        ]
+    },
+    {
+        "start_time": 160,
+        "end_time": 170,
+        "text": "Tham hỏi động viên hỗ trợ các gia đình có người thiệt mạng vào mất tích đồng thời hỗ trợ nhân dân sơ tán người tài sản đến nơi an toàn lực lượng chức năng bố trí chủ ở tạm thời an toàn cho các hộ",
+        "img_path": [
+            "035.jpg",
+            "036.jpg",
+            "037.jpg"
+        ]
+    },
+    {
+        "start_time": 170,
+        "end_time": 180,
+        "text": "dân bị mất nhà ở tăng cường bổ sung đầy đủ về người vật tư y tế thực phẩm nước uống phục vụ công tác khác phục và tìm kiếm cứu nạn đồng thời theo dõi sét dự",
+        "img_path": [
+            "038.jpg",
+            "039.jpg",
+            "040.jpg",
+            "041.jpg"
+        ]
+    },
+    {
+        "start_time": 180,
+        "end_time": 190,
+        "text": "báo diễn biến thời tiết để chủ động trong công tác phòng chống thiên tai và tìm kiếm cứu nng chiều 25 tháng 7 hàng loạt trụ điện trung thế trên đường Đế 741 đoạn qua",
+        "img_path": [
+            "042.jpg",
+            "043.jpg"
+        ]
+    },
+    {
+        "start_time": 190,
+        "end_time": 200,
+        "text": "huyện Phú riền tỉnh Bình Phước bất ngờ gãy đổ sau cơn bưa lớn kèm theo giá mạnh tình trạng mất điện xảy ra trên viện rộng Theo thông tin ban đầu khoảng 14 gi",
+        "img_path": [
+            "044.jpg",
+            "045.jpg",
+            "046.jpg"
+        ]
+    },
+    {
+        "start_time": 200,
+        "end_time": 210,
+        "text": "chiều cùng ngày cơn mưa lớn kéo theo gió mạnh bất ngờ quét qua là một tru điện trung thế gãy ngang thân sau đó nhanh chóng kéo theo năm trụ điện liền kề cũng",
+        "img_path": [
+            "047.jpg",
+            "048.jpg",
+            "049.jpg",
+            "050.jpg"
+        ]
+    },
+    {
+        "start_time": 210,
+        "end_time": 220,
+        "text": "gãy đổ Thiên Tài xảy ra bất ngờ khiến gần như toàn bộ khu vực xã Bình Tân và một phần địa bàn thị xã Phước Long mất điện chiều cùng ngày lãnh đạo điện lực",
+        "img_path": [
+            "051.jpg",
+            "052.jpg"
+        ]
+    },
+    {
+        "start_time": 220,
+        "end_time": 230,
+        "text": "tỉnh Bình Phước cho biết ngay khi phát hiện sự cố công ty điện lực tỉnh Bình Phước đã điều động hàng chục công nhân nhanh chóng có mặt tại hiện trường triển khai phương án khắc phục sự cố các công nhân đang tích cực đấu nối nguồn điện từ",
+        "img_path": [
+            "053.jpg"
+        ]
+    },
+    {
+        "start_time": 230,
+        "end_time": 240,
+        "text": "thị xã Phước Long về huyện Phú riền để cấp điện lại cho người dân nguyên nhân đang tiếp tục được cơ quan chức năng điều tra làm rõ với mục tiêu trở thành một đồ mối",
+        "img_path": [
+            "054.jpg",
+            "055.jpg"
+        ]
+    },
+    {
+        "start_time": 240,
+        "end_time": 250,
+        "text": "quan trọng về giao thông vận tải cả trong nước lận quốc tế Ủy ban Nhân dân thành phố Cần Thơ phê duyệt dự án nâng cấp mở rộng quốc lộ 91 với chi phí hơn",
+        "img_path": [
+            "056.jpg",
+            "057.jpg"
+        ]
+    },
+    {
+        "start_time": 250,
+        "end_time": 260,
+        "text": "1000 tỷ đồng cho mỗi km thời gian thực hiện từ năm 2023 đến năm 2027 điểm đầu dự án từ km số 0 tay nút",
+        "img_path": [
+            "058.jpg",
+            "059.jpg"
+        ]
+    },
+    {
+        "start_time": 260,
+        "end_time": 270,
+        "text": "giao đường Cách Mạng Tháng 8 Hùng Vương Trần Phú Nguyễn trải thuộc địa phận quận Ninh Kiều điểm cuối tại km số 7 quốc lộ 91 kết nối vào đoạn km 7 km 144 do Bộ",
+        "img_path": [
+            "060.jpg",
+            "061.jpg"
+        ]
+    },
+    {
+        "start_time": 270,
+        "end_time": 280,
+        "text": "Giao thông vận tải đã thực hiện thuộc địa phận quận Bình Thủy đoạn 7 km quốc lộ 91 Sẽ được mở rộng ra 23 M với sá",
+        "img_path": [
+            "062.jpg",
+            "063.jpg"
+        ]
+    },
+    {
+        "start_time": 280,
+        "end_time": 290,
+        "text": "làng xe tốc độ thiết kế 60 kmh dự án dự kiến cần thu hồi khoảng 27,2 h đất với khoảng 1110 hộ và 71 tổ chức bị ảnh",
+        "img_path": [
+            "064.jpg"
+        ]
+    },
+    {
+        "start_time": 290,
+        "end_time": 300,
+        "text": "hưởng tổng vốn đầu tư của dự án là gần 7240 tỷ đồng trong đó chi phí giải phóng mặt bằng hơn 5500 tỷ đồng dự án cũng",
+        "img_path": [
+            "065.jpg",
+            "066.jpg"
+        ]
+    },
+    {
+        "start_time": 300,
+        "end_time": 310,
+        "text": "nhằm xây dựng và hoàn thiện nâng cao hiệu quả khai thác quốc lộ 91 qua Cần Thơ đặc biệt kết nối khu cảng và khu công nghiệp Trà Nóc sân bay Cần Thơ với",
+        "img_path": [
+            "067.jpg",
+            "068.jpg"
+        ]
+    },
+    {
+        "start_time": 310,
+        "end_time": 320,
+        "text": "các địa bàn lân cận Bên cạnh đó góp phần giảm ùng tắc giao thông và các nguy cơ tiìm ẩn tai nạn giao thông trên đoạn tuyến này trong phần sau quốc lộ 1 rơi vào",
+        "img_path": [
+            "069.jpg",
+            "070.jpg"
+        ]
+    },
+    {
+        "start_time": 320,
+        "end_time": 330,
+        "text": "cảnh ùn xe nghiêm trọng nhiều giờ sau vụ tai nạn giao thông chết người 12 công nhân nhập viện do bổng",
+        "img_path": [
+            "071.jpg",
+            "072.jpg"
+        ]
+    },
+    {
+        "start_time": 330,
+        "end_time": 340,
+        "text": "trong vụ cháy kho xưởng công ty chuyên sản xuất bật lửa gà [âm nhạc] Chiều qua tại giao lộ Quốc lộ 1 và đường",
+        "img_path": [
+            "073.jpg",
+            "074.jpg",
+            "075.jpg"
+        ]
+    },
+    {
+        "start_time": 340,
+        "end_time": 350,
+        "text": "M1 quận Bình Tân thành phố Hồ Chí Minh đã xảy ra vụ va chạm giao thông chết người t nạn khiến quốc lộ 1 rơi vào cảnh ùng ứ xe nghiêm trọng nhiều",
+        "img_path": [
+            "076.jpg"
+        ]
+    },
+    {
+        "start_time": 350,
+        "end_time": 360,
+        "text": "giờ theo thông tin ban đầu khoảng 15 giờ xe tải nạn loại 15 tấn do lch 39 tuổi quay Tây Ninh điều khiển lưu thôn theo hướng Từ khu công nghiệp Tân Bình ra",
+        "img_path": [
+            "077.jpg",
+            "078.jpg"
+        ]
+    },
+    {
+        "start_time": 360,
+        "end_time": 370,
+        "text": "quốc lộ 1 khi đến giao lộ trên trong lúc tài xế cho xe chuyển hướng rẽ phải đi về hướng An Sương thì xảy ra va chạm với xe máy do ông n PT 58 tuổi ở quận Bình Tân",
+        "img_path": [
+            "079.jpg",
+            "080.jpg",
+            "081.jpg"
+        ]
+    },
+    {
+        "start_time": 370,
+        "end_time": 380,
+        "text": "cầm lái lưu thông phía trước cùng chiều hậu quả chiếc xe tải cuốn cả người và xe máy vào gầm đẩy đi một đoạn nạn nhân tử vong tại chỗ ảnh hưởng từ vụ tai nạn này",
+        "img_path": [
+            "082.jpg",
+            "083.jpg",
+            "084.jpg"
+        ]
+    },
+    {
+        "start_time": 380,
+        "end_time": 390,
+        "text": "khiến giao thông trên quốc lộ một và các tuyến đường lân cận rơi vào hỗng loạn ung tắc nghiêm trọng trong nhiều giờ dòng phương tiện nối đuôi nhau nhiều km trên quốc lô m nhận thin báo Công an",
+        "img_path": [
+            "085.jpg",
+            "086.jpg"
+        ]
+    },
+    {
+        "start_time": 390,
+        "end_time": 400,
+        "text": "quận Bình Tân phối hợp đội cảnh sát giao thông Phú Lâm đã đến giải quyết hiện trường Gần 18 giờ cùng ngày vụ tai nạn mới được giải quyết xong nguyên nhân đang được điều tra làm",
+        "img_path": [
+            "087.jpg",
+            "088.jpg",
+            "089.jpg"
+        ]
+    },
+    {
+        "start_time": 400,
+        "end_time": 410,
+        "text": "rõ đi ngược chiều dẫn tới va chạm với người đi xe máy rồi bỏ chạy ngày 25 tháng 0 Công an Thành phố Thủ Đức thành phố Hồ Chí Minh đang vào cuộc xác minh",
+        "img_path": [
+            "090.jpg",
+            "091.jpg"
+        ]
+    },
+    {
+        "start_time": 410,
+        "end_time": 420,
+        "text": "vụ tai nạn trên trước đó mạng xã hội lan truyền đoạn camera ghi lại cảnh Một xe ô tô biển số thành phố Hồ Chí Minh đi ngược",
+        "img_path": [
+            "092.jpg"
+        ]
+    },
+    {
+        "start_time": 420,
+        "end_time": 430,
+        "text": "chiều trên đường Kha Vạn Cân khi đang rẽ trái ngược chiều vào đường Đào Trinh Nhất phường Linh Tây Thành phố Thủ Đức thì va chạm với một thanh niên đi xe máy ở hướng ngược lại vụ va chạm làm xe máy",
+        "img_path": [
+            "093.jpg",
+            "094.jpg"
+        ]
+    },
+    {
+        "start_time": 430,
+        "end_time": 440,
+        "text": "ngã xuống đường mắc kẹt nên tài xế ô tô lùi lại để nạn nhân dựng xe lên rồi dắt vào lề tài xế xe ô tô sau đó nhanh chóng",
+        "img_path": [
+            "095.jpg",
+            "096.jpg"
+        ]
+    },
+    {
+        "start_time": 440,
+        "end_time": 450,
+        "text": "rời khỏi hiện trường bức xúc trước thái độ của tài xế ô tô nam thanh niên đi xe máy xin nhà dân trích xuất camera rồi đăng lên mạng xã hội Tiếp nhận thông tin",
+        "img_path": [
+            "097.jpg",
+            "098.jpg"
+        ]
+    },
+    {
+        "start_time": 450,
+        "end_time": 460,
+        "text": "đội cảnh sát giao thông công an thành phố Thủ Đức đã vào cuộc xác minh và xác định được chủ hai phương tiện liên quan vụ việc đang tiếp tục được làm rõ",
+        "img_path": [
+            "099.jpg",
+            "100.jpg",
+            "101.jpg"
+        ]
+    },
+    {
+        "start_time": 460,
+        "end_time": 470,
+        "text": "12 công nhân bị bỏng trong vụ cháy kho xưởng công ty chuyên sản xuất bậc lửa ga vụ hỏa hoạn xảy ra vào trưa qua tại huyện Đông Hưng tỉnh Thái Bình theo thông tin ban đầu khoảng 11",
+        "img_path": [
+            "102.jpg",
+            "103.jpg"
+        ]
+    },
+    {
+        "start_time": 470,
+        "end_time": 480,
+        "text": "giờ kho xưởng sản xuất thuộc công ty trách nhiệm hữu Hạ Hòa Việt công ty sản xuất sản phẩm bật lửa ga và một số sản phẩm khác bất ngờ cháy lớn nhân tin báo",
+        "img_path": [
+            "104.jpg",
+            "105.jpg"
+        ]
+    },
+    {
+        "start_time": 480,
+        "end_time": 490,
+        "text": "[ __ ] cảnh sát phòng cháy chữa cháy và cứu hộ cứu nạn huyện Đông Hưng tỉnh Thái Bình đã huy động lực lượng phương tiện triển khai nhiệm vụ tham gia chữa cháy đến khả gi cng ngày đám chế cơ bản được dập tắt",
+        "img_path": [
+            "106.jpg",
+            "107.jpg",
+            "108.jpg"
+        ]
+    },
+    {
+        "start_time": 490,
+        "end_time": 500,
+        "text": "thông tin từ bệnh viện đa khoa Đông Hưng bệnh viện đã tiếp nhận 12 ca bị bổng các nạn nhân nhập viện trong tình trạng bỏng lửa mức độ vừa toàn thân ổn định không",
+        "img_path": [
+            "109.jpg",
+            "110.jpg"
+        ]
+    },
+    {
+        "start_time": 500,
+        "end_time": 510,
+        "text": "suy hô hấp và đều được xử trí tích cực khẩn trương bệnh viện sau đó tiếp tục chuyển 11 trường hợp lên bệnh viện đa khoa tỉnh Thái Bình một trường hợp bị hoảng loạn tinh thần được theo dõi xử",
+        "img_path": [
+            "111.jpg",
+            "112.jpg"
+        ]
+    },
+    {
+        "start_time": 510,
+        "end_time": 520,
+        "text": "trí tại bệnh viện đa khoa đồ hng trong phần tiếp theo của chương trình khiến hàng ngàn cư dân và du khách sơ",
+        "img_path": [
+            "113.jpg"
+        ]
+    },
+    {
+        "start_time": 520,
+        "end_time": 530,
+        "text": "tán khỏi công Vi quốc gia ở dãy núi rockies Canada lo ngại 1,4 triệu lít dầu nh nhiên liệu công nghiệp vận chuyển trên tàu bị ro rỉ Philippines chạy đua với",
+        "img_path": [
+            "114.jpg",
+            "115.jpg"
+        ]
+    },
+    {
+        "start_time": 530,
+        "end_time": 540,
+        "text": "thời gian để ngăn chặn sự cố tràn dầu ngày 24 tháng 7 Tập đoàn sản xuất máy bay Boing của Mỹ đã chính thức thừa nhận Có âm mưu gian lận trong quá trình",
+        "img_path": [
+            "116.jpg",
+            "117.jpg"
+        ]
+    },
+    {
+        "start_time": 540,
+        "end_time": 550,
+        "text": "chứng nhận dòng máy bay mas và động ý nộp phạt do vi phạm một thỏa thuận tạm hoảng khởi tố với bộ tiêu Pháp Mỹ năm 2021 cũng liên quan đến sai phạm của",
+        "img_path": [
+            "118.jpg"
+        ]
+    },
+    {
+        "start_time": 550,
+        "end_time": 560,
+        "text": "dòng máy bay 737 ma theo cáo trạng công bố ngày 24 tháng 7 bộ tư pháp Mỹ cho biết bo in đã vi phạm thỏa thuận năm",
+        "img_path": [
+            "119.jpg",
+            "120.jpg"
+        ]
+    },
+    {
+        "start_time": 560,
+        "end_time": 570,
+        "text": "2021 khi đặt lợi nhuận lên hàng đầu dẫn đến Việ CT giảm các quy trình kiểm soát chất lượng Nghiêm ngặc để nhanh quá trình sản xuất và làm gia tăng nguy cơ xảy ra sự cố cùng ngày bo in xác nhận đã",
+        "img_path": [
+            "121.jpg"
+        ]
+    },
+    {
+        "start_time": 570,
+        "end_time": 580,
+        "text": "đề trình một thỏa thuận nhận tội chi tiết với bộ tư pháp trong đó đồng ý chi ít nhất 455 triệu đô la trong 3 năm tới để thúc đẩy các chương trình an toàn và",
+        "img_path": [
+            "122.jpg",
+            "123.jpg"
+        ]
+    },
+    {
+        "start_time": 580,
+        "end_time": 590,
+        "text": "tuân thủ cao hơn 75 ph so với kế hoạch chi tiêu trước đó của bô gia đình những người thiệt mạng trong các vụ tai nạn của dòng máy bay 737 Max có thể nập đơn",
+        "img_path": [
+            "124.jpg"
+        ]
+    },
+    {
+        "start_time": 590,
+        "end_time": 600,
+        "text": "phản đối thỏa thuận trong vòng một tuần trong khi bo in có thời gian 4 tháng kể từ sau khi Tuyền án để dàn xếp bồi thường ngoài ra một cơ quan giám sát Độc",
+        "img_path": [
+            "125.jpg",
+            "126.jpg"
+        ]
+    },
+    {
+        "start_time": 600,
+        "end_time": 610,
+        "text": "Lập sẽ được thành lập để giám sát các hoạt động của Boing và đưa ra báo cáo hàng năm trong 3 năm liên tục hàng ngàn cư dân và du khách đã sơ tán hội công viên quốc gia ở dãy núi",
+        "img_path": [
+            "127.jpg",
+            "128.jpg",
+            "129.jpg"
+        ]
+    },
+    {
+        "start_time": 610,
+        "end_time": 620,
+        "text": "rockies của Canada sau khi chính quyền tại đây cảnh báo cháy rừng đang langan đến rất nhanh Thực trảng trên làm giấy lên lo ngại về một mùa cháy rừng kỷ lục khác ở Canada trong năm",
+        "img_path": [
+            "130.jpg",
+            "131.jpg",
+            "132.jpg"
+        ]
+    },
+    {
+        "start_time": 620,
+        "end_time": 630,
+        "text": "nay cung viên Quốc gia jesper thông báo vào sáng sớm 23 tháng 0 rằng nhiều đám chơ rừng đang bùng phát trong cù viên này nằm kết thành phố edmonton ở tỉnh",
+        "img_path": [
+            "133.jpg",
+            "134.jpg"
+        ]
+    },
+    {
+        "start_time": 630,
+        "end_time": 640,
+        "text": "miền Tây alada khoảng 370 km về phía tây thị trấn SHB đang ngập trong khối chái rừng là nơi sinh sống của 4700 tr cư dân",
+        "img_path": [
+            "135.jpg",
+            "136.jpg"
+        ]
+    },
+    {
+        "start_time": 640,
+        "end_time": 650,
+        "text": "theo số liệu chính thức khoảng 170 đám cháy đã bùng phát trên khắp tỉnh aparta vào ngày 23 tháng 7 trong đó khoảng 1/3 vụ cháy rừng vẫn chưa được kiểm soát nhân viên của công viên quốc gia jesper",
+        "img_path": [
+            "137.jpg"
+        ]
+    },
+    {
+        "start_time": 650,
+        "end_time": 660,
+        "text": "và Chính quyền địa phương đã nỗ lực giải quyết tình trạng tác nãn giao thông cung cấp nhiên liệu cho các phương tiện và hỗ trợ những người dễ bị tổn thương sơ tán đến nơi an toàn đồng thời huy động các",
+        "img_path": [
+            "138.jpg",
+            "139.jpg"
+        ]
+    },
+    {
+        "start_time": 660,
+        "end_time": 670,
+        "text": "nguồn lực để nỗ lực chữa cháy những người phát sơ tán được thông báo rằng họ có 5 giờ để dọn dẹp và mang theo những giấy tờ Hồ s quan trọng vật nuôi thuốc",
+        "img_path": [
+            "140.jpg",
+            "141.jpg"
+        ]
+    },
+    {
+        "start_time": 670,
+        "end_time": 680,
+        "text": "men và bất kỳ vật dụng khẩn cấp nào khác tàu MT terranova treo cờ Philippines đã bị lật ú Và chìm gây ra một vệt dầu Loan dài khoảng 3,7 km trên",
+        "img_path": [
+            "142.jpg"
+        ]
+    },
+    {
+        "start_time": 680,
+        "end_time": 690,
+        "text": "tuyến đường thủy đồng đúc nhà chức trách Philippines đang nỗ lực chạy đua với thời gian để ngăn chặn sự cố tràn dầu tàu MT terranova treo cờ Philippin",
+        "img_path": [
+            "143.jpg"
+        ]
+    },
+    {
+        "start_time": 690,
+        "end_time": 700,
+        "text": "đã bị lật up Và chìm ở Vịnh Manila cách khu đô thị l ở tỉnh batan gần th đô khoảng 7 km khi đang hướng tới thành phố",
+        "img_path": [
+            "144.jpg",
+            "145.jpg"
+        ]
+    },
+    {
+        "start_time": 700,
+        "end_time": 710,
+        "text": "miền Trung Yo phát biểu hợp báo người phát ngôn của lực lượng bảo vệ bờ biển Philippines chuẩn đô đốc mando bido nhận định nếu",
+        "img_path": [
+            "146.jpg",
+            "147.jpg",
+            "148.jpg"
+        ]
+    },
+    {
+        "start_time": 710,
+        "end_time": 720,
+        "text": "toàn bộ 1,4 triệu lít dầu nhiên liệu công nghiệp vận chuyển trên tàu bị rò rỉ đây sẽ là vụ tràng dầu lớn nhất trong lịch sử Philippines cũng theo quan chức",
+        "img_path": [
+            "149.jpg"
+        ]
+    },
+    {
+        "start_time": 720,
+        "end_time": 730,
+        "text": "này sự cố có thể sẽ ảnh hưởng đến các khu vực bờ biển Manila trước đó Bộ trưởng giao thônga cho biết 16 trong số vi đ đã được",
+        "img_path": [
+            "150.jpg",
+            "151.jpg"
+        ]
+    },
+    {
+        "start_time": 730,
+        "end_time": 740,
+        "text": "giải cứu trong đó b người đang được điều trị y tế lực lượng chức năng đang tìm kiếm một thủy thủ bị mất tích công tác ứng phó đang gặp khó khăn do gió mạnh và",
+        "img_path": [
+            "152.jpg"
+        ]
+    },
+    {
+        "start_time": 740,
+        "end_time": 750,
+        "text": "sóng lớn Tào MT terranova bị sóng lớn nhấn chìm khi Manila và các vùng lân cận hứng chịu mưa to và gió lớn do ảnh hưởng",
+        "img_path": [
+            "153.jpg",
+            "154.jpg"
+        ]
+    },
+    {
+        "start_time": 750,
+        "end_time": 760,
+        "text": "của cơn bả G trong những ngày gần đây tổ chức giáo dục khoa học và văn hóa Liên Hiệp Quốc Unesco ngày 25 tháng 7 quyết định đưa điểm hành hương Phật giáo",
+        "img_path": [
+            "155.jpg"
+        ]
+    },
+    {
+        "start_time": 760,
+        "end_time": 770,
+        "text": "lumini vào danh sách các di sản đang bị đe dọa thay vào đó chính quyền Nepal được cho thêm thời gian để khôi phục các khu vườn và khu ngôi đền nổi tiếng đang bị xúng",
+        "img_path": [
+            "156.jpg",
+            "157.jpg"
+        ]
+    },
+    {
+        "start_time": 770,
+        "end_time": 780,
+        "text": "cấp theo truyền thống Phật giáo lumbini được xem là nơi sinh của đức Phật nơi này được Unesco công nhận là di sản thế giới vào năm 1997 các chuyên gia của UNESCO đã Khuyến",
+        "img_path": [
+            "158.jpg",
+            "159.jpg"
+        ]
+    },
+    {
+        "start_time": 780,
+        "end_time": 790,
+        "text": "nghị đưa lini vào danh sách các di sản đang bị đe dọa do sự xuống cấp của các đặc điểm chính ở địa điểm này cho thấy tình trạng bảo tồn đáng báo động Unesco",
+        "img_path": [
+            "160.jpg"
+        ]
+    },
+    {
+        "start_time": 790,
+        "end_time": 800,
+        "text": "cho biết các di tích còn lại tại một ngôi làng cổ nằm trong dùng đệm của địa điểm này đã bị phá hủy dường Thiên của ngôi làng không được bảo dưỡng và đề",
+        "img_path": [
+            "161.jpg",
+            "162.jpg"
+        ]
+    },
+    {
+        "start_time": 800,
+        "end_time": 810,
+        "text": "Maya devid trung tâm đang tiếp tục bị nước làm hư hại UNESCO đã cho Nepal đến ngày 01 tháng 0 năm 2025 để nộp báo cáo mới về tình trạng báo tôn và cho biết",
+        "img_path": [
+            "163.jpg",
+            "164.jpg"
+        ]
+    },
+    {
+        "start_time": 810,
+        "end_time": 820,
+        "text": "vấn đề này sẽ được xem xét lại tại cuộc họp thường niên vào năm tới đoàn đại biểu của Nepal đã đảm bảo với Unesco rằng họ họ cam kết thực hiện đầy đủ các",
+        "img_path": [
+            "165.jpg",
+            "166.jpg"
+        ]
+    },
+    {
+        "start_time": 820,
+        "end_time": 830,
+        "text": "khuyế nghị việc đưa một di sản vào danh sách đang bị đe dọa sẽ tập hợp được sự ủng hộ của quốc tế cho các nỗ lực báo tôn tuy nhiên cũng có thể dẫn đến việc địa đểm đó bị loại khỏi danh sách di sản",
+        "img_path": [
+            "167.jpg"
+        ]
+    },
+    {
+        "start_time": 830,
+        "end_time": 840,
+        "text": "đánh giá của UNESCO một nữ vận động viên đua xe lăng người Tây Ban Nha đã trở thành nguồn cảm hứng khi chia sẻ câu chuyện về nghị lực",
+        "img_path": [
+            "168.jpg"
+        ]
+    },
+    {
+        "start_time": 840,
+        "end_time": 850,
+        "text": "sống phi thường và tinh thần thể thao của mình cuộc sống của caren gimenez đảo lộn vào 1 ngày tháng 3 năm 2010 khi cô bị",
+        "img_path": [
+            "169.jpg",
+            "170.jpg"
+        ]
+    },
+    {
+        "start_time": 850,
+        "end_time": 860,
+        "text": "tấn công tàn bào dù bảo lực khiến camen bị chấn thương tủy sống và phải ngồi xe lăng huyết tật không phải là điều định nghĩa bạn hoàn toàn Nó chỉ là một đặc",
+        "img_path": [
+            "171.jpg",
+            "172.jpg"
+        ]
+    },
+    {
+        "start_time": 860,
+        "end_time": 870,
+        "text": "điểm tôi đã đổi mới bản thân và điều đó thay đổi cách tôi nhìn nhận chính mình và người khác đối mặt với chấn thương tủy sống là một quá trình rèn luyện về mặt thể chất và tôi cũng rèn luyện để",
+        "img_path": [
+            "173.jpg"
+        ]
+    },
+    {
+        "start_time": 870,
+        "end_time": 880,
+        "text": "thích nghi với cuộc sống sử dụng xe lăng vài năm sau vữ thấn cung camen phải đối mặt với nỗi đau mất con khi cậu con trai của cô qua đời vì sinh non nhưng khen",
+        "img_path": [
+            "174.jpg",
+            "175.jpg"
+        ]
+    },
+    {
+        "start_time": 880,
+        "end_time": 890,
+        "text": "không để B kịch này hoặc ngã mình con trai bruno của tôi là người đã dạy tôi về tình yêu thương tôi nhận ra rằng sống không chỉ là sống mà phải yêu cuộc sống",
+        "img_path": [
+            "176.jpg"
+        ]
+    },
+    {
+        "start_time": 890,
+        "end_time": 900,
+        "text": "của mình Ban Đầu Cô chỉ có thể tham gia các cuộc đua 100 m Nhưng sau khi trải qua quá trình rèn luyện giờ đây cô có thể hoàn thành các cuộc đua marathon vừa",
+        "img_path": [
+            "177.jpg"
+        ]
+    },
+    {
+        "start_time": 900,
+        "end_time": 910,
+        "text": "qua camen trở thành vận Đông viên ngồi xe lăng người Tây Ban Nha đầu tiên tham gia Boston Marathon t cập nhật nhật khoảng 22 gi khuya qua một công ty gỗ trong khu công",
+        "img_path": [
+            "178.jpg",
+            "179.jpg"
+        ]
+    },
+    {
+        "start_time": 910,
+        "end_time": 920,
+        "text": "nghiệp Rạch Bắp phường An Tây Thành phố Bến Cát tỉnh Bình Dương bất ngờ bóng cháy ng ngục ngọn lửa chế Lang Bao trùm cá nhà xưởng rộng hàng Ngà m vuông nhận tin báo cảnh sát hộp chái chữ cháy tỉnh",
+        "img_path": [
+            "180.jpg",
+            "181.jpg"
+        ]
+    },
+    {
+        "start_time": 920,
+        "end_time": 930,
+        "text": "Bình Dương huy động 11 phương tiện cùng 66 cán bộ chiến sĩ tới hiện trường gần hai tiếng sau vụ hỏa hoạn được khống chế vụ cháy không gây thiệt hại về người nhưng nhiều tài sản bị thiêu rụi theo cơ",
+        "img_path": [
+            "182.jpg"
+        ]
+    },
+    {
+        "start_time": 930,
+        "end_time": 940,
+        "text": "quan công an công ty này đã bị đình chỉ hoạt động vào ngày 23 tháng 3 vừa qua do vi phạm an toàn phòng cháy chữa cháy",
+        "img_path": [
+            "183.jpg",
+            "184.jpg"
+        ]
+    },
+    {
+        "start_time": 940,
+        "end_time": 950,
+        "text": "cũng tại Bình Dương vào khuya qua một vụ tai nạn chết người đã xảy ra tại phường Tân Đông Hiệp thành phố dị An Theo thông tin ban đầu khoảng 22:30",
+        "img_path": [
+            "185.jpg"
+        ]
+    },
+    {
+        "start_time": 950,
+        "end_time": 960,
+        "text": "Anh Nguyễn Cảnh Châu 27 tuổi quê Nghệ An chạy xe máy trên đường Mỹ Phước Tân vng hướng từ An Phú đi quốc lộ 1 ca khi vừa",
+        "img_path": [
+            "186.jpg",
+            "187.jpg"
+        ]
+    },
+    {
+        "start_time": 960,
+        "end_time": 970,
+        "text": "qua khỏi ngã tư cây xăng 68 tại khu vực trên thì tông vào đuôi xe đầ kéo đang dừng sát giải phân cách cú va chậm làm nạn nhân ngã xuống đường bất tỉnh Mặc dù nhanh chóng được đưa đi cấp cứu nhưng đã",
+        "img_path": [
+            "188.jpg",
+            "189.jpg",
+            "190.jpg"
+        ]
+    },
+    {
+        "start_time": 970,
+        "end_time": 980,
+        "text": "tử vong sau đó tai nạn làm chiếc xe máy bể nát riêng chiếc xe đầu kéo liên quan đã rời khỏi hiện trường sau tai nạn nhận tin báo công an thành phố Dĩ An đã tới",
+        "img_path": [
+            "191.jpg",
+            "192.jpg"
+        ]
+    },
+    {
+        "start_time": 980,
+        "end_time": 990,
+        "text": "khám nghiệm hiện trường trích xất camera để tìm chiếc xe đầu kéo liên quan những thông tin vừa rồi cũng đã kết thúc chương trình 60 Giây sáng nay của chúng tôi Hẹn gặp lại quý vị trong",
+        "img_path": [
+            "193.jpg",
+            "194.jpg"
+        ]
+    },
+    {
+        "start_time": 990,
+        "end_time": 1000,
+        "text": "chương trình 60 Giây chiều nay xin kính chào tạm biệt I",
+        "img_path": [
+            "195.jpg"
+        ]
+    }
+]
