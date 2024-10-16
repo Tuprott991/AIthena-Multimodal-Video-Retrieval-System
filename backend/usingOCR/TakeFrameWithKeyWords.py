@@ -52,12 +52,13 @@ def find_list_key_frame(pagefile, global_pagefile, keywords: str, k: int = 100) 
             except Exception as e:
                 print(f"Error processing file {json_path}: {e}")
         else:
-            print(f"Warning: OCR JSON file {json_path} does not exist.")
+            # print(f"Warning: OCR JSON file {json_path} does not exist.")
+            pass
 
     # print(matching_frames)
     # Filter global pagefile based on the frames found
 
-    print(matching_frames)
+    # print(matching_frames)
     filtered_pagefile = [
         item for item in global_pagefile if item['imgpath'] in matching_frames
     ]
