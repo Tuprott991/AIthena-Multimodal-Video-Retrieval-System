@@ -4,8 +4,7 @@
 - Check the CLIP-features folder first, please copy all features file into this folder 
 - cd backend and run **_genarateIndexBinFile.py_**
 - For people from AIthena team please: 
-    **_pip install openai==0.28_**
-    **_pip install flask_cors_**
+    **_pip install openai==0.28 flask_cors_**
 
 
 <!-- ![image](https://github.com/user-attachments/assets/31721ad1-5a83-4c5c-aae2-7ba6d23f21df) -->
