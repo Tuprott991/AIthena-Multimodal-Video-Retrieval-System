@@ -9,7 +9,6 @@ const Layout = () => {
    <Nav></Nav>
    <Aside></Aside>
    <Main></Main>
-   {/* <Footer></Footer> */}
    <Iframe></Iframe>
   </div>
  );

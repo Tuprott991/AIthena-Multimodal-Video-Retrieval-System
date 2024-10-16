@@ -1,10 +1,12 @@
-import { useContext } from "react";
+import { useContext, useEffect, useRef } from "react";
 import { OptionContext } from "../OptionContext";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 
 const Footer = () => {
- const { footer, setIframe, setFooter } = useContext(OptionContext);
+ const scrollRef = useRef(null);
+ const { added, footer, setAdded, setIframe, setFooter } =
+  useContext(OptionContext);
  const navigate = useNavigate();
  const handleIR = async (id) => {
   navigate(`/imgsearch?imgid=${id}`);
@@ -30,28 +32,60 @@ const Footer = () => {
    setFooter(response.data.pagefile);
   }
  };
- console.log("footer", footer);
 
+ const handleAdded = (item) => {
+  if (!added.some((i) => i.id === item.id)) {
+   setAdded((prev) => [...prev, { id: item.id }]);
+  }
+ };
+ const handleRemove = (item) => {
+  setAdded((prev) => prev.filter((i) => i.id !== item.id));
+ };
+ useEffect(() => {
+  // Scroll to the middle position when the component mounts
+  if (scrollRef.current) {
+   scrollRef.current.scrollLeft =
+    scrollRef.current.scrollWidth / 2 - scrollRef.current.clientWidth / 2;
+  }
+ }, [footer]);
  return (
-  <div className="fixed   left-[20%] w-[80vw] right-0 overflow-x-scroll  bottom-0    bg-gray-300 px-2">
+  <div
+   ref={scrollRef}
+   className="fixed  w-[79vw]  left-[20%] overflow-x-scroll  bottom-0 pt-2    bg-gray-300 px-2"
+  >
    <div className="inline-flex gap-1 h-full ">
     {footer &&
-     footer.map((item, index) => (
-      <div key={index} className="h-full w-[150px] relative group ">
+     footer.map((item) => (
+      <div key={item.id} className="h-full w-[150px] relative group ">
        <img
         className="rounded h-full "
         src={item.imgpath}
         alt="image description"
-        onClick={() => handleOnClick(index)}
+        onClick={() => handleOnClick(item.id)}
        />
-       <button
-        className="font-bold absolute text-sm text-center 
-                rounded-sm top-1 left-1 px-2 py-[1px]
-                text-white bg-emerald-500 border-none focus:outline-none 
-                hover:bg-emerald-800 hover:ring-2 hover:ring-emerald-800 opacity-70 hover:opacity-100"
-       >
-        +
-       </button>
+       {!added.some((i) => i.id === item.id) ? (
+        <button
+         className="font-bold absolute text-sm text-center 
+             rounded-sm top-1 left-1
+             px-2 py-[1px]
+             text-white bg-emerald-500 border-none focus:outline-none hover:bg-emerald-800 hover:ring-2 hover:ring-emerald-800  opacity-70 hover:opacity-100
+             "
+         onClick={() => handleAdded(item)}
+        >
+         +
+        </button>
+       ) : (
+        <button
+         className="font-semibold absolute text-sm text-center 
+             rounded-sm top-1 left-1
+             px-2 py-[1px]
+             text-white bg-red-500 border-none focus:outline-none hover:bg-red-800 hover:ring-2 hover:ring-red-800  
+             "
+         onClick={() => handleRemove(item)}
+        >
+         Added
+        </button>
+       )}
        <div className=" absolute bottom-[3px] flex items-center justify-center w-full gap-3 text-white">
         <button
          className="font-medium group-hover:block hidden  text-xs rounded-sm

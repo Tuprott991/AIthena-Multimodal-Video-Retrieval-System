@@ -3,6 +3,7 @@ import { createContext, useState } from "react";
 export const OptionContext = createContext();
 export const OptionProvider = ({ children }) => {
  const [data, setData] = useState();
+ const [added, setAdded] = useState([]);
  const [selectedOption, setSelectedOption] = useState("CLIP");
  const [isKeywords, setIsKeywords] = useState(false);
  const [keywords, setKeywords] = useState("");
@@ -39,7 +40,9 @@ export const OptionProvider = ({ children }) => {
   <OptionContext.Provider
    value={{
     data,
+    added,
     setData,
+    setAdded,
     footer,
     setFooter,
     selectedOption,

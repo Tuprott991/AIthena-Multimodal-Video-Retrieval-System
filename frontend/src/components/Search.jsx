@@ -28,6 +28,7 @@ const Search = () => {
  const handleSubmit = async (event) => {
   event.preventDefault();
   console.log(selectedOption);
+  console.log(range);
   handleKeywordChange("");
   const faiss =
    selectedOption === "CLIP" ||
@@ -49,10 +50,10 @@ const Search = () => {
    num_images: 100,
   };
   console.log(
-   `/textsearch?query=${query}&faiss=${faiss}&ocr=${ocr}&subtitle=${subtitles}&cq=${isCQ}&keywords=${keywords}&num_images=100`
+   `/textsearch?query=${query}&faiss=${faiss}&ocr=${ocr}&subtitle=${subtitles}&cq=${isCQ}&keywords=${keywords}&num_images=${range}`
   );
   navigate(
-   `/textsearch?query=${query}&faiss=${faiss}&ocr=${ocr}&subtitle=${subtitles}&cq=${isCQ}&keywords=${keywords}&num_images=100`
+   `/textsearch?query=${query}&faiss=${faiss}&ocr=${ocr}&subtitle=${subtitles}&cq=${isCQ}&keywords=${keywords}&num_images=${range}`
   );
  };
 

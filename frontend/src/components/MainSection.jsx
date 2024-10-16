@@ -7,7 +7,9 @@ const MainSection = () => {
  const navigate = useNavigate();
  const {
   data,
+  added,
   setData,
+  setAdded,
   footer,
   setFooter,
   selectedOption,
@@ -22,7 +24,6 @@ const MainSection = () => {
   handleDataChange,
  } = useContext(OptionContext);
  const [searchParams] = useSearchParams();
- console.log("searchParams", searchParams.size);
  useEffect(() => {
   const fetchData = async () => {
    handleLoading(true);
@@ -49,7 +50,6 @@ const MainSection = () => {
       },
      });
     }
-    console.log("Search Results:", response.data);
     let filteredData = [];
     if (response.data) {
      filteredData = response.data.pagefile
@@ -88,15 +88,24 @@ const MainSection = () => {
   );
   console.log("C", response.data);
  };
- const handleOnClick = async (index) => {
+ const handleOnClick = async (id) => {
   const response = await axios.get(
-   `http://localhost:5001/getneighbor?imgid=${index}`
+   `http://localhost:5001/getneighbor?imgid=${id}`
   );
   if (response) {
    setFooter(response.data.pagefile);
   }
  };
- console.log(footer);
+
+ const handleAdded = (item) => {
+  if (!added.some((i) => i.id === item.id)) {
+   setAdded((prev) => [...prev, { id: item.id }]);
+  }
+ };
+ const handleRemove = (item) => {
+  setAdded((prev) => prev.filter((i) => i.id !== item.id));
+ };
+ console.log(added);
 
  if (loading) {
   return (
@@ -125,25 +134,38 @@ const MainSection = () => {
    <div className="p-4 w-full ">
     <div className="grid grid-cols-5 mb-[12%] gap-2 ">
      {data &&
-      data.map((item, index) => (
-       <div key={index} className="group relative w-full h-full">
+      data.map((item) => (
+       <div key={item.id} className="group relative w-full h-full">
         <img
-         key={index}
+         key={item.id}
          className="h-full w-full rounded "
          src={item.imgpath}
-         //     src={}
          alt="image description"
-         onClick={() => handleOnClick(index)}
+         onClick={() => handleOnClick(item.id)}
         />
-        <button
-         className="font-bold absolute text-sm text-center 
+        {!added.some((i) => i.id === item.id) ? (
+         <button
+          className="font-bold absolute text-sm text-center 
              rounded-sm top-1 left-1
              px-2 py-[1px]
              text-white bg-emerald-500 border-none focus:outline-none hover:bg-emerald-800 hover:ring-2 hover:ring-emerald-800  opacity-70 hover:opacity-100
              "
-        >
-         <span>+</span>
-        </button>
+          onClick={() => handleAdded(item)}
+         >
+          +
+         </button>
+        ) : (
+         <button
+          className="font-semibold absolute text-sm text-center 
+             rounded-sm top-1 left-1
+             px-2 py-[1px]
+             text-white bg-red-500 border-none focus:outline-none hover:bg-red-800 hover:ring-2 hover:ring-red-800  
+             "
+          onClick={() => handleRemove(item)}
+         >
+          Added
+         </button>
+        )}
         <div className="invisible absolute bottom-[3px] flex items-center justify-center w-full gap-3 text-white">
          <button
           className="font-medium group-hover:visible text-sm rounded-sm
