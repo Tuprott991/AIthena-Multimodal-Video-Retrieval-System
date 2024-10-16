@@ -8,9 +8,9 @@ from io import BytesIO
 load_dotenv()
 
 # OpenAI API Key
-OPENAI_API = os.getenv('OPENAI_KEY')
+OPENAI_API_KEY = os.getenv('OPENAI_API_KEY')
 def clarification(prompt):
-    openai.api_key = OPENAI_API
+    openai.api_key = OPENAI_API_KEY
 
     response = openai.ChatCompletion.create(
         model="chatgpt-4o-latest",  # Use appropriate model name
@@ -27,7 +27,7 @@ def clarification(prompt):
 
 
 def standard_prompt(prompt):
-    openai.api_key = OPENAI_API
+    openai.api_key = OPENAI_API_KEY
 
     response = openai.ChatCompletion.create(
         model="chatgpt-4o-latest",  # Use appropriate model name
@@ -42,7 +42,7 @@ def standard_prompt(prompt):
 
 def qa(image_path, ques):
 # Function to encode the image
-    openai.api_key = OPENAI_API
+    openai.api_key = OPENAI_API_KEY
     def encode_image(image_path):
       with open(image_path, "rb") as image_file:
         return base64.b64encode(image_file.read()).decode('utf-8')
@@ -82,7 +82,7 @@ def qa(image_path, ques):
 
 
 def gen_img(i_prompt):
-  openai.api_key = OPENAI_API  # Đặt API key
+  openai.api_key = OPENAI_API_KEY  # Đặt API key
 
   response = openai.Image.create(
       model="dall-e-3",

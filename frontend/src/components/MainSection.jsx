@@ -123,7 +123,7 @@ const MainSection = () => {
  return (
   <>
    <div className="p-4 w-full ">
-    <div className="grid grid-cols-5 mb-[12%] gap-1 ">
+    <div className="grid grid-cols-5 mb-[12%] gap-2 ">
      {data &&
       data.map((item, index) => (
        <div key={index} className="group relative w-full h-full">
@@ -139,7 +139,7 @@ const MainSection = () => {
          className="font-bold absolute text-sm text-center 
              rounded-sm top-1 left-1
              px-2 py-[1px]
-             text-white bg-emerald-500 border-none focus:outline-none hover:bg-emerald-800 hover:ring-2 hover:ring-emerald-800
+             text-white bg-emerald-500 border-none focus:outline-none hover:bg-emerald-800 hover:ring-2 hover:ring-emerald-800  opacity-70 hover:opacity-100
              "
         >
          <span>+</span>
@@ -148,7 +148,7 @@ const MainSection = () => {
          <button
           className="font-medium group-hover:visible text-sm rounded-sm
              px-2 py-[2px]
-             text-white bg-emerald-500 border-none focus:outline-none hover:bg-emerald-800 hover:ring-2 hover:ring-emerald-800
+             text-white bg-emerald-500 border-none focus:outline-none hover:bg-emerald-800 hover:ring-2 hover:ring-emerald-800  opacity-70 hover:opacity-100
              "
           onClick={() => handleIR(item.id)}
          >
@@ -160,7 +160,7 @@ const MainSection = () => {
           data-modal-toggle="default-modal"
           className="font-medium group-hover:visible text-sm rounded-sm 
                px-2 py-[2px]
-               text-white bg-emerald-500 border-none focus:outline-none hover:bg-emerald-800 hover:ring-2 hover:ring-emerald-800"
+               text-white bg-emerald-500 border-none focus:outline-none hover:bg-emerald-800 hover:ring-2 hover:ring-emerald-800  opacity-70 hover:opacity-100"
           onClick={() => handleYT(item.imgpath)}
          >
           YT
@@ -168,7 +168,7 @@ const MainSection = () => {
          <button
           className="font-medium right-0 group-hover:visible  text-sm  rounded-sm 
           px-2 py-[2px]
-               text-white bg-emerald-500 border-none focus:outline-none hover:bg-emerald-800 hover:ring-2 hover:ring-emerald-800"
+               text-white bg-emerald-500 border-none focus:outline-none hover:bg-emerald-800 hover:ring-2 hover:ring-emerald-800  opacity-70 hover:opacity-100"
           onClick={() => handleC(item.imgpath)}
          >
           C

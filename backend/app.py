@@ -154,7 +154,6 @@ def text_search():
     elif subtitle_checked:
         pagefile = sub.get_frame_ASR(preQueryPageFile if cq_checked else global_pagefile, global_pagefile, text_query)
     
-
     preQueryPageFile = copy.deepcopy(pagefile)
     DictPreImgPath, list_video_path = get_DictPreImgPath(pagefile)
 

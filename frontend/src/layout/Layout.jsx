@@ -2,7 +2,6 @@ import Nav from "../components/Nav";
 import Aside from "../components/Aside";
 import Iframe from "../components/Iframe";
 import Main from "../components/Main";
-import Footer from "../components/Footer";
 
 const Layout = () => {
  return (
@@ -10,7 +9,7 @@ const Layout = () => {
    <Nav></Nav>
    <Aside></Aside>
    <Main></Main>
-   <Footer></Footer>
+   {/* <Footer></Footer> */}
    <Iframe></Iframe>
   </div>
  );

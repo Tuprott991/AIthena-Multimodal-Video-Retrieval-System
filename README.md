@@ -15,7 +15,7 @@ pip install -r requirements.txt
 - First, we have to start our backend
 - Check the CLIP-features folder first, please copy all features file into this folder 
 - cd backend and run **_genarateIndexBinFile.py_**
-- Creat **.env** file that contains **OPENAI_API**
+- Creat **.env** file that contains **OPENAI_API_KEY**
 - To host the backend:
 
 ```

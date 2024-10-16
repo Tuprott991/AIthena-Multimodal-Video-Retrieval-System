@@ -33,54 +33,56 @@ const Footer = () => {
  console.log("footer", footer);
 
  return (
-  <div className="fixed  left-[20%] w-full right-0 overflow-y-scroll  bottom-0 h-[20%] bg-white px-2">
-   {footer &&
-    footer.map((item, index) => (
-     <div key={index} className="h-full w-[200px] ">
-      <img
-       className="rounded h-full w-[400px]"
-       src={item.imgpath}
-       alt="image description"
-       onClick={() => handleOnClick(index)}
-      />
-      <button
-       className="font-bold absolute text-sm text-center 
+  <div className="fixed   left-[20%] w-[80vw] right-0 overflow-x-scroll  bottom-0    bg-gray-300 px-2">
+   <div className="inline-flex gap-1 h-full ">
+    {footer &&
+     footer.map((item, index) => (
+      <div key={index} className="h-full w-[150px] relative group ">
+       <img
+        className="rounded h-full "
+        src={item.imgpath}
+        alt="image description"
+        onClick={() => handleOnClick(index)}
+       />
+       <button
+        className="font-bold absolute text-sm text-center 
                 rounded-sm top-1 left-1 px-2 py-[1px]
                 text-white bg-emerald-500 border-none focus:outline-none 
-                hover:bg-emerald-800 hover:ring-2 hover:ring-emerald-800"
-      >
-       <span>+</span>
-      </button>
-      <div className="invisible absolute bottom-[3px] flex items-center justify-center w-full gap-3 text-white">
-       <button
-        className="font-medium group-hover:visible text-sm rounded-sm
-                  px-2 py-[2px] text-white bg-emerald-500 border-none focus:outline-none 
-                  hover:bg-emerald-800 hover:ring-2 hover:ring-emerald-800"
-        onClick={() => handleIR(item.id)}
+                hover:bg-emerald-800 hover:ring-2 hover:ring-emerald-800 opacity-70 hover:opacity-100"
        >
-        IR
+        +
        </button>
-       <button
-        data-modal-target="default-modal"
-        data-modal-toggle="default-modal"
-        className="font-medium group-hover:visible text-sm rounded-sm
+       <div className=" absolute bottom-[3px] flex items-center justify-center w-full gap-3 text-white">
+        <button
+         className="font-medium group-hover:block hidden  text-xs rounded-sm
                   px-2 py-[2px] text-white bg-emerald-500 border-none focus:outline-none 
-                  hover:bg-emerald-800 hover:ring-2 hover:ring-emerald-800"
-        onClick={() => handleYT(item.imgpath)}
-       >
-        YT
-       </button>
-       <button
-        className="font-medium right-0 group-hover:visible text-sm rounded-sm
+                  hover:bg-emerald-800 hover:ring-2 hover:ring-emerald-800 opacity-70 hover:opacity-100"
+         onClick={() => handleIR(item.id)}
+        >
+         IR
+        </button>
+        <button
+         data-modal-target="default-modal"
+         data-modal-toggle="default-modal"
+         className="font-medium group-hover:block hidden text-xs rounded-sm
                   px-2 py-[2px] text-white bg-emerald-500 border-none focus:outline-none 
-                  hover:bg-emerald-800 hover:ring-2 hover:ring-emerald-800"
-        onClick={() => handleC(item.imgpath)}
-       >
-        C
-       </button>
+                  hover:bg-emerald-800 hover:ring-2  hover:ring-emerald-800 opacity-70 hover:opacity-100"
+         onClick={() => handleYT(item.imgpath)}
+        >
+         YT
+        </button>
+        <button
+         className="font-medium right-0 group-hover:block hidden text-xs rounded-sm
+                  px-2 py-[2px] text-white bg-emerald-500 border-none focus:outline-none 
+                  hover:bg-emerald-800 hover:ring-2 hover:ring-emerald-800 opacity-70 hover:opacity-100"
+         onClick={() => handleC(item.imgpath)}
+        >
+         C
+        </button>
+       </div>
       </div>
-     </div>
-    ))}
+     ))}
+   </div>
   </div>
  );
 };
