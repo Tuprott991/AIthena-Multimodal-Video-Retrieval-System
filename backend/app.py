@@ -8,7 +8,7 @@ from utils.faiss import Myfaiss
 from genarator import PrenIdexBinGenerator as pre
 from flask_cors import CORS
 import openai_func as opai
-
+import requests
 os.environ['CUDA_VISIBLE_DEVICES'] = '-1'
 
 # app = Flask(__name__, template_folder='templates')
@@ -17,8 +17,11 @@ CORS(app)
 DictImagePath = {}
 i = 0
 
+
 start_path = os.path.abspath("../frontend/public")
 main_path = os.path.abspath("../frontend/public/images")
+
+SESSION_ID="HgeEMCEgQVkLby8gbuD2we0vL93XpyqU"
 
 for folder in sorted(os.listdir(main_path)):
     folder_path = os.path.join(main_path, folder)
@@ -258,6 +261,9 @@ def qa():
     output = opai.qa(img_path, ques)
     return jsonify(output)
 
+@app.route("/getsessionId")
+def session_id():
+    return jsonify(SESSION_ID)
 
 if __name__ == '__main__':
     app.run(debug=True, host="0.0.0.0", port=5001)

@@ -1,4 +1,5 @@
-import { createContext, useState } from "react";
+import axios from "axios";
+import { createContext, useEffect, useState } from "react";
 
 export const OptionContext = createContext();
 export const OptionProvider = ({ children }) => {
@@ -12,7 +13,16 @@ export const OptionProvider = ({ children }) => {
  const [range, setRange] = useState(100);
  const [iframe, setIframe] = useState(null);
  const [footer, setFooter] = useState();
-
+ const [sessionId, setSessionId] = useState();
+ useEffect(() => {
+  const fecthSessionId = async () => {
+   const response = await axios.get("http://localhost:5001/getsessionId");
+   if (response) {
+    setSessionId(response.data);
+   }
+  };
+  fecthSessionId();
+ }, []);
  const handleOptionChange = (value) => {
   if (value === "CLIP + OCR" || value === "CLIP + ASR") {
    setIsKeywords(true);
@@ -41,6 +51,8 @@ export const OptionProvider = ({ children }) => {
    value={{
     data,
     added,
+    sessionId,
+    setSessionId,
     setData,
     setAdded,
     footer,
