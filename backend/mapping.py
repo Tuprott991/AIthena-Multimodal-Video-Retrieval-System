@@ -17,7 +17,6 @@ class mapping:
     def getTime(self):
         csv_path = os.path.join(map_keyframes_directory,self.folder+'.csv')
         df = pd.read_csv(csv_path)
-        
         return df.loc[df['n'] == int(self.file.split('.')[0]), 'pts_time'].values[0]
     
     def generateURL(self):

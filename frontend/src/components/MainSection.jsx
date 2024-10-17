@@ -82,11 +82,10 @@ const MainSection = () => {
   console.log("path", response.data);
   setIframe(response.data);
  };
- const handleC = async (path) => {
+ const handleC = async (item) => {
   const response = await axios.get(
-   `http://localhost:5001/get_Answer?path=${path}`
+   `http://localhost:5001/get_Answer?path=${item.imgpath}`
   );
-  console.log("C", response.data);
  };
  const handleOnClick = async (id) => {
   const response = await axios.get(
@@ -97,12 +96,16 @@ const MainSection = () => {
   }
  };
 
- const handleAdded = (item) => {
+ const handleAdded = async (item) => {
   if (!added.some((i) => i.id === item.id)) {
+   const response = await axios.get(
+    `http://localhost:5001/get_Answer?path=${item.imgpath}`
+   );
    setAdded((prev) => [
     ...prev,
     {
      id: item.id,
+     milisecond: response.data.split(", ")[1],
      folder: item.imgpath.split(/[/\\]/).slice(-2, -1)[0],
      image: item.imgpath.split(/[/\\]/).slice(-1)[0],
     },
@@ -200,7 +203,7 @@ const MainSection = () => {
           className="font-medium right-0 group-hover:visible  text-sm  rounded-sm 
           px-2 py-[2px]
                text-white bg-emerald-500 border-none focus:outline-none hover:bg-emerald-800 hover:ring-2 hover:ring-emerald-800  opacity-70 hover:opacity-100"
-          onClick={() => handleC(item.imgpath)}
+          onClick={() => handleC(item)}
          >
           C
          </button>

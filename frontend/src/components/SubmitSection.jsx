@@ -1,39 +1,90 @@
 import { useContext, useEffect, useState } from "react";
 import { OptionContext } from "../OptionContext";
+import axios from "axios";
 
 const SubmitSection = () => {
- const { added, sessionId, setSessionId, setAdded } = useContext(OptionContext);
-
+ const {
+  added,
+  sessionId,
+  setSessionId,
+  setAdded,
+  evaluationId,
+  setEvaluationId,
+ } = useContext(OptionContext);
+ const handleSessionID = async () => {
+  const response = await axios.post(
+   " https://eventretrieval.one/api/v2/login",
+   {
+    username: "team13",
+    password: "x3uRJaTVdy",
+   }
+  );
+  setSessionId(response.data.sessionId);
+ };
+ const handleEvaluationID = async () => {
+  const response = await axios.get(
+   "https://eventretrieval.one/api/v2/client/evaluation/list",
+   {
+    params: {
+     session: sessionId,
+    },
+   }
+  );
+  setEvaluationId({ id: response.data[0].id, name: response.data[0].name });
+ };
  const handleRemove = (item) => {
   setAdded((prev) => prev.filter((i) => i.id !== item.id));
  };
  console.log(added);
  return (
-  <div className="rounded-lg p-4 w-full ">
-   <div className="mb-4 flex gap-2 items-center">
-    <div className="w-[15%] py-2 px-4 bg-blue-600 hover:bg-blue-800 rounded font-semibold text-white text-sm ">
-     Get evaluationID
+  <div className="rounded-lg p-4 w-full">
+   <div className="flex flex-wrap ">
+    <div className="flex w-full gap-2 mb-4">
+     <div
+      className="hover:cursor-pointer basis-[11%] text-center rounded-lg font-semibold w-full px-3 py-1 text-sm text-white border bg-blue-700 border-blue-700 hover:bg-blue-800 focus:ring-2 focus:outline-none focus:ring-blue-300"
+      onClick={() => handleSessionID()}
+     >
+      Get sessionID
+     </div>
+     <input
+      type="text"
+      value={sessionId}
+      disabled
+      className="basis-[30%] px-4 cursor-not-allowed bg-slate-200  border border-gray-300 focus:outline-none text-gray-900 text-sm rounded-lg"
+     />
     </div>
-    <input
-     type="search"
-     id="default-search"
-     className="block w-full  p-[10px] text-sm text-gray-500 border border-gray-300 rounded-lg bg-gray-200 cursor-not-allowed"
-     placeholder="Your sessionId"
-     value={sessionId}
-     disabled
-    />
+    <div className="flex w-full gap-2">
+     <div
+      className="hover:cursor-pointer basis-[13%] text-center rounded-lg font-semibold w-full px-3 py-1 text-sm text-white border bg-blue-700 border-blue-700 hover:bg-blue-800 focus:ring-2 focus:outline-none focus:ring-blue-300"
+      onClick={() => handleEvaluationID()}
+     >
+      Get evaluationID
+     </div>
+     <input
+      type="text"
+      defaultValue={evaluationId.id}
+      disabled
+      className="basis-[30%] px-4 cursor-not-allowed bg-slate-200  border border-gray-300 focus:outline-none text-gray-900 text-sm rounded-lg"
+     />
+     <input
+      type="text"
+      defaultValue={evaluationId.name}
+      disabled
+      className="basis-[20%] px-4 cursor-not-allowed bg-slate-200  border border-gray-300 focus:outline-none text-gray-900 text-sm rounded-lg"
+     />
+    </div>
    </div>
-   <table className="w-full text-sm text-left rtl:text-right text-gray-500 mb-8 ">
+   <table className="w-full text-sm text-left rtl:text-right text-gray-500 mt-6 mb-8 ">
     <thead className="text-xs text-gray-700 uppercase bg-gray-200 dark:bg-gray-700">
      <tr>
       <th scope="col" className="px-6 py-3">
        Folder
       </th>
       <th scope="col" className="px-6 py-3">
-       Frame
+       Image
       </th>
       <th scope="col" className="px-6 py-3">
-       Image
+       Milisecond
       </th>
       <th scope="col" className="px-6 py-3">
        Action
@@ -50,8 +101,8 @@ const SubmitSection = () => {
         >
          {item.folder}
         </th>
-        <td className="px-6 py-4">{item.id}</td>
         <td className="px-6 py-4">{item.image}</td>
+        <td className="px-6 py-4">{item.milisecond}</td>
         <td className="px-6 py-4">
          <button
           className="font-medium text-blue-600 dark:text-blue-500 hover:underline"

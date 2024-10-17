@@ -9,6 +9,7 @@ from genarator import PrenIdexBinGenerator as pre
 from flask_cors import CORS
 import openai_func as opai
 from dotenv import load_dotenv
+import requests
 load_dotenv()
 os.environ['CUDA_VISIBLE_DEVICES'] = '-1'
 
@@ -76,7 +77,10 @@ def thumbnailimg():
     for imgpath, id in zip(page_filelist, list_idx):
         pagefile.append({'imgpath': os.path.relpath(imgpath, start_path), 'id': id})
     data = {'num_page': int(LenDictPath / imgperindex) + 1, 'pagefile': pagefile}
-
+    # for item in pagefile:
+    #     obj = mp.mapping(item['imgpath'])
+    #     time_ = int(obj.getTime() * 1000)
+    #     item['milisecond'] = time_
     # return render_template('home.html', data=data)
     return jsonify(data)
 
@@ -97,6 +101,11 @@ def get_neighbor():
     # Extract the relevant part of the path for React's public folder access
         if (item['imgpath']):
             item['imgpath'] = os.path.relpath(item['imgpath'], start_path)
+
+    # for item in pagefile:
+    #     obj = mp.mapping(item['imgpath'])
+    #     time_ = int(obj.getTime() * 1000)
+    #     item['milisecond'] = time_
     return jsonify(data)
     
     # return render_template('home.html', data=data)
@@ -115,6 +124,11 @@ def image_search():
     # Extract the relevant part of the path for React's public folder access
         if (item['imgpath']):
             item['imgpath'] = os.path.relpath(item['imgpath'], start_path)
+
+    # for item in pagefile:
+    #     obj = mp.mapping(item['imgpath'])
+    #     time_ = int(obj.getTime() * 1000)
+    #     item['milisecond'] = time_
     # return render_template('home.html', data=data)
     return jsonify(data)
 
@@ -168,6 +182,12 @@ def text_search():
 
     if len(pagefile) != 0:
         pre.create_pre_bin_file(list_video_path)
+
+    # for item in pagefile:
+    #     obj = mp.mapping(item['imgpath'])
+    #     time_ = int(obj.getTime() * 1000)
+    #     item['milisecond'] = time_
+
     data = {'num_page': int(LenDictPath/num_images)+1, 'pagefile': pagefile}   
     for item in data['pagefile']:
     # Extract the relevant part of the path for React's public folder access
@@ -234,13 +254,10 @@ def get_Answer():
     # img_path = img_path.split('\\')[-2:]
     # img_path = os.path.join(os.getcwd(),'data','images', img_path[0], img_path[1])
     # img_path = img_path.replace("\\", "/")
-    print("path",img_path)
     obj = mp.mapping(img_path)
-    frame_idx = obj.getFrame_idx()
-    print("frame idx", frame_idx)
+    time_ = int(obj.getTime() * 1000)
     # answer = img_path.split('/')[-2] + ", " + str(frame_idx) 
-    answer = obj.folder + ", " + str(frame_idx) 
-
+    answer = obj.folder + ", " + str(time_) 
     pyperclip.copy(answer)
     return jsonify(answer)
 
@@ -270,6 +287,24 @@ def qa():
 @app.route("/getsessionId")
 def session_id():
     return jsonify(SESSION_ID)
+
+@app.route("/getevaluationId")
+def evaluation_id():
+    evaluation_url = "https://eventretrieval.one/api/v2/client/evaluation/list"
+    params = {"session": SESSION_ID}
+    
+    try:
+        response = requests.get(evaluation_url, params=params)
+        response.raise_for_status()  # Raise an error for bad responses (4xx or 5xx)
+
+        data = response.json()
+        print(data)  
+
+        return jsonify(data), response.status_code
+    except requests.exceptions.RequestException as e:
+        print(f"Error fetching evaluation ID: {e}")
+        return jsonify({"error": "Failed to fetch evaluation ID"}), 500
+    
 
 if __name__ == '__main__':
     app.run(debug=True, host="0.0.0.0", port=5001)

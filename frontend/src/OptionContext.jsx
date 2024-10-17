@@ -14,15 +14,8 @@ export const OptionProvider = ({ children }) => {
  const [iframe, setIframe] = useState(null);
  const [footer, setFooter] = useState();
  const [sessionId, setSessionId] = useState();
- useEffect(() => {
-  const fecthSessionId = async () => {
-   const response = await axios.get("http://localhost:5001/getsessionId");
-   if (response) {
-    setSessionId(response.data);
-   }
-  };
-  fecthSessionId();
- }, []);
+ const [evaluationId, setEvaluationId] = useState({ id: "", name: "" });
+ const [qa, setQA] = useState(false);
  const handleOptionChange = (value) => {
   if (value === "CLIP + OCR" || value === "CLIP + ASR") {
    setIsKeywords(true);
@@ -52,6 +45,10 @@ export const OptionProvider = ({ children }) => {
     data,
     added,
     sessionId,
+    evaluationId,
+    qa,
+    setQA,
+    setEvaluationId,
     setSessionId,
     setData,
     setAdded,
