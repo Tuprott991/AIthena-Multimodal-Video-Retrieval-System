@@ -102,9 +102,9 @@ const MainSection = () => {
    setAdded((prev) => [
     ...prev,
     {
-     id: item.id,
-     folder: item.imgpath.split("\\").slice(-2, -1)[0],
-     image: item.imgpath.split("\\").slice(-1)[0],
+      id: item.id,
+      folder: item.imgpath.split(/[\/\\]/).slice(-2, -1)[0], 
+      image: item.imgpath.split(/[\/\\]/).slice(-1)[0], 
     },
    ]);
   }
@@ -173,7 +173,7 @@ const MainSection = () => {
          </button>
         )}
         <div className="font-medium absolute text-sm top-1 left-10 text-center text-green-500">
-         {item.imgpath.split("\\").slice(-2).join("/")}
+         {item.imgpath.split(/[\/\\]/).slice(-2).join("/")}
         </div>
         <div className="invisible absolute bottom-[3px] flex items-center justify-center w-full gap-3 text-white">
          <button
