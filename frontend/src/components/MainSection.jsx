@@ -109,7 +109,7 @@ const MainSection = () => {
 
  if (loading) {
   return (
-   <div className="w-full h-full flex items-center justify-center ">
+   <div className="w-full h-full flex pt-[10%] justify-center">
     <svg
      aria-hidden="true"
      className="w-12 h-12 text-gray-200 animate-spin dark:text-gray-600 fill-blue-600 "
@@ -131,7 +131,7 @@ const MainSection = () => {
  }
  return (
   <>
-   <div className="p-4 w-full ">
+   <div className="p-4 w-full overflow-y-visible h-screen ">
     <div className="grid grid-cols-5 mb-[12%] gap-2 ">
      {data &&
       data.map((item) => (
@@ -156,16 +156,19 @@ const MainSection = () => {
          </button>
         ) : (
          <button
-          className="font-semibold absolute text-sm text-center 
+          className="font-bold absolute text-sm text-center 
              rounded-sm top-1 left-1
              px-2 py-[1px]
              text-white bg-red-500 border-none focus:outline-none hover:bg-red-800 hover:ring-2 hover:ring-red-800  
              "
           onClick={() => handleRemove(item)}
          >
-          Added
+          -
          </button>
         )}
+        <div className="font-medium absolute text-sm top-1 left-10 text-center text-green-500">
+         {item.imgpath.split("\\").slice(-2).join("/")}
+        </div>
         <div className="invisible absolute bottom-[3px] flex items-center justify-center w-full gap-3 text-white">
          <button
           className="font-medium group-hover:visible text-sm rounded-sm

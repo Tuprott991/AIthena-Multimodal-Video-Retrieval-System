@@ -51,7 +51,7 @@ const Footer = () => {
  return (
   <div
    ref={scrollRef}
-   className="fixed  w-[79vw]  left-[20%] overflow-x-scroll  bottom-0 pt-2    bg-gray-300 px-2"
+   className="fixed  right-[1.1em]  left-[20%] overflow-x-scroll  bottom-0 pt-2    bg-gray-300 px-2"
   >
    <div className="inline-flex gap-1 h-full ">
     {footer &&
@@ -83,9 +83,12 @@ const Footer = () => {
              "
          onClick={() => handleRemove(item)}
         >
-         Added
+         -
         </button>
        )}
+       <div className="font-medium absolute text-xs top-1 left-10 text-center text-green-500">
+        {item.imgpath.split("\\").slice(-2).join("/")}
+       </div>
        <div className=" absolute bottom-[3px] flex items-center justify-center w-full gap-3 text-white">
         <button
          className="font-medium group-hover:block hidden  text-xs rounded-sm
