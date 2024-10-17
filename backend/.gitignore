@@ -1,8 +1,8 @@
-data/CLIP-features
-data/images
-data/image
-data/newFeatures
-data/remove
+data/CLIP-features/
+data/images/
+data/image/
+data/newFeatures/
+data/remove/
 faiss_normal_ViT.bin
 utils/__pycache__/faiss.cpython-311.pyc
 utils/__pycache__/query_processing.cpython-311.pyc
