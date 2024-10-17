@@ -35,7 +35,14 @@ const Footer = () => {
 
  const handleAdded = (item) => {
   if (!added.some((i) => i.id === item.id)) {
-   setAdded((prev) => [...prev, { id: item.id }]);
+   setAdded((prev) => [
+    ...prev,
+    {
+     id: item.id,
+     folder: item.imgpath.split("\\").slice(-2, -1)[0],
+     image: item.imgpath.split("\\").slice(-1)[0],
+    },
+   ]);
   }
  };
  const handleRemove = (item) => {
@@ -51,7 +58,7 @@ const Footer = () => {
  return (
   <div
    ref={scrollRef}
-   className="fixed  right-[1.1em]  left-[20%] overflow-x-scroll  bottom-0 pt-2    bg-gray-300 px-2"
+   className=" fixed  right-[1.1em]  left-[20%] overflow-x-scroll  bottom-0 pt-2    bg-gray-300 px-2"
   >
    <div className="inline-flex gap-1 h-full ">
     {footer &&

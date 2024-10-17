@@ -99,13 +99,19 @@ const MainSection = () => {
 
  const handleAdded = (item) => {
   if (!added.some((i) => i.id === item.id)) {
-   setAdded((prev) => [...prev, { id: item.id }]);
+   setAdded((prev) => [
+    ...prev,
+    {
+     id: item.id,
+     folder: item.imgpath.split("\\").slice(-2, -1)[0],
+     image: item.imgpath.split("\\").slice(-1)[0],
+    },
+   ]);
   }
  };
  const handleRemove = (item) => {
   setAdded((prev) => prev.filter((i) => i.id !== item.id));
  };
- console.log(added);
 
  if (loading) {
   return (
@@ -131,8 +137,8 @@ const MainSection = () => {
  }
  return (
   <>
-   <div className="p-4 w-full overflow-y-visible h-screen ">
-    <div className="grid grid-cols-5 mb-[12%] gap-2 ">
+   <div className="p-4 w-full  ">
+    <div className="grid grid-cols-5 mb-[10%] gap-2 ">
      {data &&
       data.map((item) => (
        <div key={item.id} className="group relative w-full h-full">
