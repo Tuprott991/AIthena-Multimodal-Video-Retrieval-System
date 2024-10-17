@@ -8,6 +8,8 @@ from utils.faiss import Myfaiss
 from genarator import PrenIdexBinGenerator as pre
 from flask_cors import CORS
 import openai_func as opai
+from dotenv import load_dotenv
+load_dotenv()
 os.environ['CUDA_VISIBLE_DEVICES'] = '-1'
 
 # app = Flask(__name__, template_folder='templates')
@@ -20,7 +22,7 @@ i = 0
 start_path = os.path.abspath("../frontend/public")
 main_path = os.path.abspath("../frontend/public/images")
 
-SESSION_ID="HgeEMCEgQVkLby8gbuD2we0vL93XpyqU"
+SESSION_ID = os.getenv('SESSION_ID')
 
 def numerical_sort(value):
     # Tìm và chuyển các con số trong tên file thành số nguyên để sắp xếp đúng thứ tự
