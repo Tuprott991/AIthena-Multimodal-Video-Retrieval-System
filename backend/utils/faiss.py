@@ -4,11 +4,12 @@ import matplotlib.pyplot as plt
 import math
 import numpy as np 
 import clip
+import torch
 from langdetect import detect
-from genarator import genarateIndexBinFile 
+# from genarator import genarateIndexBinFile 
 
 class Myfaiss:
-    def __init__(self, bin_file : str,id2img_fps, device, translater, clip_backbone="ViT-B/32"):
+    def __init__(self, bin_file : str,id2img_fps, device, translater, clip_backbone="ViT-L/14"):
         self.index= self.load_bin_file(bin_file)
         self.id2img_fps= id2img_fps
         self.device= device
