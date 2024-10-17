@@ -20,10 +20,15 @@ i = 0
 start_path = os.path.abspath("../frontend/public")
 main_path = os.path.abspath("../frontend/public/images")
 
+def numerical_sort(value):
+    # Tìm và chuyển các con số trong tên file thành số nguyên để sắp xếp đúng thứ tự
+    parts = re.findall(r'\d+', value)
+    return int(parts[0]) if parts else 0
+
 for folder in sorted(os.listdir(main_path)):
     folder_path = os.path.join(main_path, folder)
     if os.path.isdir(folder_path):
-        for keyframe in sorted(os.listdir(folder_path)):
+        for keyframe in sorted(os.listdir(folder_path), key=numerical_sort):
             keyframe_path = os.path.join(folder_path, keyframe)
             if keyframe_path.lower().endswith(('.jpg')):
                 DictImagePath[i] = keyframe_path
@@ -35,7 +40,7 @@ global_pagefile = [{'imgpath': path, 'id': id} for id, path in DictImagePath.ite
 pre_bin_file = 'pre_faiss_normal_ViT.bin'
 LenDictPath = len(DictImagePath)
 bin_file='faiss_normal_ViT.bin' 
-MyFaiss = Myfaiss(bin_file, DictImagePath, 'cpu', Translation(), "ViT-B/32")
+MyFaiss = Myfaiss(bin_file, DictImagePath, 'cpu', Translation(), "ViT-L/14")  # Đổi lại ViT-B/32 nếu dùng data cũ
 
 preQueryPageFile = []
 
