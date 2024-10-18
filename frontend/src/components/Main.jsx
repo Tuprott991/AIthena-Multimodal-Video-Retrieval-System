@@ -11,7 +11,7 @@ const Main = () => {
  return (
   <>
    <main className="relative md:ml-[20%] h-screen pt-[62px] overflow-y-scroll ">
-    <div className="bg-white w-full mr-[1.1em]">
+    <div className="bg-white w-full ">
      <div className="flex items-center ml-6  gap-6 pt-[2px] font-semibold ">
       <button
        value="main"
