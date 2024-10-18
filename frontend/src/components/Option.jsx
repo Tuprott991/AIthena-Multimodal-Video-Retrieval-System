@@ -174,7 +174,7 @@ const Option = () => {
      className={`${
       !qa ? "cursor-not-allowed bg-slate-200" : ""
      } bg-gray-50 border border-gray-300 focus:outline-none text-gray-900 text-sm rounded-lg focus:ring-amber-500 focus:border-amber-500 block w-[30%] p-2.5`}
-     placeholder="Keywords"
+     placeholder="Answer"
      onChange={(event) => handleAnswerChange(event.target.value)}
      disabled={!qa}
      value={answer}
