@@ -193,6 +193,7 @@ def text_search():
     # Extract the relevant part of the path for React's public folder access
         if (item['imgpath']):
             item['imgpath'] = os.path.relpath(item['imgpath'], start_path)
+            
     # return render_template('home.html', data=data)
     return jsonify(data)
 
@@ -233,12 +234,10 @@ def submit_item():
     # data = request.get_json()  
     # img_path = data.get('imgpath') 
     img_path = request.args.get('path')
-    print(img_path)
     # img_path = img_path.split('/')[4:]
     # img_path = os.path.join(os.getcwd(),'data','images', img_path[0], img_path[1])
     # img_path = img_path.replace("\\", "/")
     img_path = os.path.join(start_path, img_path)
-    print(img_path)
     print("final", img_path)
     obj = mp.mapping(img_path)
     yt_url = obj.generateURL()
@@ -298,7 +297,6 @@ def evaluation_id():
         response.raise_for_status()  # Raise an error for bad responses (4xx or 5xx)
 
         data = response.json()
-        print(data)  
 
         return jsonify(data), response.status_code
     except requests.exceptions.RequestException as e:

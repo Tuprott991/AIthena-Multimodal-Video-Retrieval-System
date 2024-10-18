@@ -1,6 +1,8 @@
 import os
 import re
 import json
+import time
+import copy
 
 def find_list_key_frame(pagefile, global_pagefile, keywords: str, k: int = 100) -> list:
     """
@@ -59,9 +61,13 @@ def find_list_key_frame(pagefile, global_pagefile, keywords: str, k: int = 100) 
     # Filter global pagefile based on the frames found
 
     # print(matching_frames)
+
     filtered_pagefile = [
-        item for item in global_pagefile if item['imgpath'] in matching_frames
+        copy.deepcopy(item) for item in global_pagefile if item['imgpath'] in matching_frames
     ]
+
+    # with open('global_pagefile.json', 'w', encoding='utf-8') as json_file:
+    #     json.dump(global_pagefile, json_file, ensure_ascii=False, indent=4)
 
     # Limit to 'k' results if necessary
     if k and len(filtered_pagefile) > k:
