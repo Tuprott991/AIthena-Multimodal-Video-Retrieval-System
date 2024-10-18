@@ -7,6 +7,8 @@ const Option = () => {
  const [noti, setNoti] = useState(null);
  const {
   qa,
+  submit,
+  setSubmit,
   setQA,
   added,
   evaluationId,
@@ -33,17 +35,16 @@ const Option = () => {
    setTimeout(() => setNoti(null), duration);
   };
 
-  // Validate answer for QA
   if (qa) {
    if (!answer) {
     return showNoti("Enter answer for QA!");
    }
 
-   if (added.length > 1) {
+   if (submit.length > 1) {
     return showNoti("More than one frame added!");
    }
 
-   if (added.length === 0) {
+   if (submit.length === 0) {
     return showNoti("Add one frame!");
    }
 
@@ -57,7 +58,7 @@ const Option = () => {
       answerSets: [
        {
         answers: [
-         { text: `${answer}-${added[0].folder}-${added[0].milisecond}` },
+         { text: `${answer}-${submit[0].folder}-${submit[0].milisecond}` },
         ],
        },
       ],
@@ -71,23 +72,22 @@ const Option = () => {
      showNoti(response.data.description);
     } else {
      showNoti("Submitted!");
+     localStorage.removeItem("submit");
+     setSubmit([]);
     }
    } catch (error) {
     console.error(error);
     showNoti(error.response.data.description);
    }
-  }
-  // Non-QA scenario
-  else {
-   if (added.length > 1) {
+  } else {
+   if (submit.length > 1) {
     return showNoti("More than one frame added!");
    }
 
-   if (added.length === 0) {
+   if (submit.length === 0) {
     return showNoti("Add one frame!");
    }
 
-   // If everything is valid, submit data
    try {
     setNoti("Submitting!");
 
@@ -97,15 +97,10 @@ const Option = () => {
       answerSets: [
        {
         answers: [
-         //  {
-         //   mediaItemName: "L03_V006",
-         //   start: 880000,
-         //   end: 890000,
-         //  },
          {
-          mediaItemName: `${added[0].folder}`,
-          start: `${added[0].milisecond}`,
-          end: `${added[0].milisecond}`,
+          mediaItemName: `${submit[0].folder}`,
+          start: `${submit[0].milisecond}`,
+          end: `${submit[0].milisecond}`,
          },
         ],
        },
@@ -120,6 +115,8 @@ const Option = () => {
      showNoti(response.data.description);
     } else {
      showNoti("Submitted!");
+     localStorage.removeItem("submit");
+     setSubmit([]);
     }
    } catch (error) {
     console.error(error);

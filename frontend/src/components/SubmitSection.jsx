@@ -5,6 +5,8 @@ import axios from "axios";
 const SubmitSection = () => {
  const {
   added,
+  submit,
+  setSubmit,
   sessionId,
   setSessionId,
   setAdded,
@@ -36,7 +38,20 @@ const SubmitSection = () => {
   setEvaluationId({ id: response.data[0].id, name: response.data[0].name });
  };
  const handleRemove = (item) => {
-  setAdded((prev) => prev.filter((i) => i.id !== item.id));
+  const final = submit.filter((i) => i.id != item.id);
+  localStorage.setItem("submit", JSON.stringify(final));
+  setSubmit(final);
+ };
+ const handleTime = (e, item) => {
+  const updatedSubmit = submit.map((i) => {
+   if (i.id === item.id) {
+    return { ...i, milisecond: e.target.value };
+   }
+   return i;
+  });
+
+  localStorage.setItem("submit", JSON.stringify(updatedSubmit));
+  setSubmit(updatedSubmit);
  };
  console.log(sessionId);
  return (
@@ -100,8 +115,8 @@ const SubmitSection = () => {
      </tr>
     </thead>
     <tbody>
-     {added &&
-      added.map((item) => (
+     {submit &&
+      submit.map((item) => (
        <tr key={item.id} className="bg-white">
         <th
          scope="row"
@@ -110,7 +125,14 @@ const SubmitSection = () => {
          {item.folder}
         </th>
         <td className="px-6 py-4">{item.image}</td>
-        <td className="px-6 py-4">{item.milisecond}</td>
+        <td className="px-6 py-4">
+         <input
+          className="text-gray-900 font-semibold border border-gray-200 rounded py-1 px-2"
+          type="text"
+          value={item.milisecond}
+          onChange={(e) => handleTime(e, item)}
+         />
+        </td>
         <td className="px-6 py-4">
          <button
           className="font-medium text-blue-600 dark:text-blue-500 hover:underline"

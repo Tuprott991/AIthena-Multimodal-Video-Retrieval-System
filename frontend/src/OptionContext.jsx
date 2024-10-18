@@ -5,6 +5,7 @@ export const OptionContext = createContext();
 export const OptionProvider = ({ children }) => {
  const [data, setData] = useState();
  const [added, setAdded] = useState([]);
+ const [submit, setSubmit] = useState([]);
  const [selectedOption, setSelectedOption] = useState("CLIP");
  const [isKeywords, setIsKeywords] = useState(false);
  const [keywords, setKeywords] = useState("");
@@ -27,6 +28,12 @@ export const OptionProvider = ({ children }) => {
   const savedEvaluationName = localStorage.getItem("name");
   if (savedEvaluationId && savedEvaluationName) {
    setEvaluationId({ id: savedEvaluationId, name: savedEvaluationName });
+  }
+ }, []);
+ useEffect(() => {
+  const savedSubmit = localStorage.getItem("submit");
+  if (savedSubmit) {
+   setSubmit(JSON.parse(savedSubmit));
   }
  }, []);
  const handleOptionChange = (value) => {
@@ -57,6 +64,8 @@ export const OptionProvider = ({ children }) => {
    value={{
     data,
     added,
+    submit,
+    setSubmit,
     sessionId,
     evaluationId,
     qa,
