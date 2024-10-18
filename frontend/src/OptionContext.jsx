@@ -16,6 +16,19 @@ export const OptionProvider = ({ children }) => {
  const [sessionId, setSessionId] = useState();
  const [evaluationId, setEvaluationId] = useState({ id: "", name: "" });
  const [qa, setQA] = useState(false);
+ useEffect(() => {
+  const savedSessionId = localStorage.getItem("sessionId");
+  if (savedSessionId) {
+   setSessionId(savedSessionId);
+  }
+ }, []);
+ useEffect(() => {
+  const savedEvaluationId = localStorage.getItem("evaluationId");
+  const savedEvaluationName = localStorage.getItem("name");
+  if (savedEvaluationId && savedEvaluationName) {
+   setEvaluationId({ id: savedEvaluationId, name: savedEvaluationName });
+  }
+ }, []);
  const handleOptionChange = (value) => {
   if (value === "CLIP + OCR" || value === "CLIP + ASR") {
    setIsKeywords(true);

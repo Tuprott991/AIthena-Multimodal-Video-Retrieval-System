@@ -1,11 +1,17 @@
 import { useContext, useState } from "react";
 import { OptionContext } from "../OptionContext";
+import axios from "axios";
 
 const Option = () => {
  const [answer, setAnswer] = useState();
+ const [noti, setNoti] = useState(null);
  const {
   qa,
   setQA,
+  added,
+  evaluationId,
+  sessionId,
+  setAdded,
   selectedOption,
   isKeywords,
   keywords,
@@ -14,14 +20,114 @@ const Option = () => {
  } = useContext(OptionContext);
  const handleQA = async (value) => {
   setQA(value);
-  if (!value) {
-   setAnswer("");
-  }
+  setAnswer("");
  };
  const handleAnswerChange = async (value) => {
+  setNoti(null);
   setAnswer(value);
  };
- const handleSubmit = async () => {};
+ const handleSubmit = async () => {
+  // Helper function to display notification temporarily
+  const showNoti = (message, duration = 4000) => {
+   setNoti(message);
+   setTimeout(() => setNoti(null), duration);
+  };
+
+  // Validate answer for QA
+  if (qa) {
+   if (!answer) {
+    return showNoti("Enter answer for QA!");
+   }
+
+   if (added.length > 1) {
+    return showNoti("More than one frame added!");
+   }
+
+   if (added.length === 0) {
+    return showNoti("Add one frame!");
+   }
+
+   // If everything is valid, submit data
+   try {
+    setNoti("Submitting!");
+
+    const response = await axios.post(
+     `https://eventretrieval.one/api/v2/submit/${evaluationId.id}`,
+     {
+      answerSets: [
+       {
+        answers: [
+         { text: `${answer}-${added[0].folder}-${added[0].milisecond}` },
+        ],
+       },
+      ],
+     },
+     {
+      params: { session: sessionId },
+     }
+    );
+
+    if (!response.data.status) {
+     showNoti(response.data.description);
+    } else {
+     showNoti("Submitted!");
+    }
+   } catch (error) {
+    console.error(error);
+    showNoti(error.response.data.description);
+   }
+  }
+  // Non-QA scenario
+  else {
+   if (added.length > 1) {
+    return showNoti("More than one frame added!");
+   }
+
+   if (added.length === 0) {
+    return showNoti("Add one frame!");
+   }
+
+   // If everything is valid, submit data
+   try {
+    setNoti("Submitting!");
+
+    const response = await axios.post(
+     `https://eventretrieval.one/api/v2/submit/${evaluationId.id}`,
+     {
+      answerSets: [
+       {
+        answers: [
+         //  {
+         //   mediaItemName: "L03_V006",
+         //   start: 880000,
+         //   end: 890000,
+         //  },
+         {
+          mediaItemName: `${added[0].folder}`,
+          start: `${added[0].milisecond}`,
+          end: `${added[0].milisecond}`,
+         },
+        ],
+       },
+      ],
+     },
+     {
+      params: { session: sessionId },
+     }
+    );
+
+    if (!response.data.status) {
+     showNoti(response.data.description);
+    } else {
+     showNoti("Submitted!");
+    }
+   } catch (error) {
+    console.error(error);
+    showNoti(error.response.data.description);
+   }
+  }
+ };
+
  return (
   <div className="flex items-center gap-2 ">
    <div className="flex gap-4 ">
@@ -73,10 +179,65 @@ const Option = () => {
      disabled={!qa}
      value={answer}
     />
-    <button className="rounded-lg font-semibold  px-8 py-2 text-sm text-white border bg-amber-500 border-amber-500 hover:bg-amber-600 focus:ring-2 focus:outline-none focus:ring-amber-300 ">
-     S
+    <button
+     className="rounded-lg font-semibold  px-8 py-2 text-sm text-white border bg-amber-500 border-amber-500 hover:bg-amber-600 focus:ring-2 focus:outline-none focus:ring-amber-300 "
+     onClick={() => handleSubmit()}
+    >
+     Submit {qa ? "QA" : "KIS"}
     </button>
    </div>
+
+   {/* NOTI */}
+   {noti && (
+    <div
+     id="toast-default"
+     className="absolute right-4 top-16 flex items-center  py-2 pr-4 pl-2 text-gray-500 bg-white rounded-lg shadow dark:text-gray-400 dark:bg-gray-800"
+     role="alert"
+    >
+     {noti === "Submitting!" ? (
+      <div className="inline-flex items-center justify-center flex-shrink-0 w-8 h-8 text-orange-500 bg-orange-100 rounded-lg dark:bg-orange-700 dark:text-orange-200">
+       <svg
+        className="w-5 h-5"
+        aria-hidden="true"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="currentColor"
+        viewBox="0 0 20 20"
+       >
+        <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM10 15a1 1 0 1 1 0-2 1 1 0 0 1 0 2Zm1-4a1 1 0 0 1-2 0V6a1 1 0 0 1 2 0v5Z" />
+       </svg>
+       <span className="sr-only">Warning icon</span>
+      </div>
+     ) : noti === "Submitted!" ? (
+      <div className="inline-flex items-center justify-center flex-shrink-0 w-8 h-8 text-green-500 bg-green-100 rounded-lg dark:bg-green-800 dark:text-green-200">
+       <svg
+        className="w-5 h-5"
+        aria-hidden="true"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="currentColor"
+        viewBox="0 0 20 20"
+       >
+        <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
+       </svg>
+       <span className="sr-only">Check icon</span>
+      </div>
+     ) : (
+      <div className="inline-flex items-center justify-center flex-shrink-0 w-8 h-8 text-red-500 bg-red-100 rounded-lg dark:bg-red-800 dark:text-red-200">
+       <svg
+        className="w-5 h-5"
+        aria-hidden="true"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="currentColor"
+        viewBox="0 0 20 20"
+       >
+        <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 11.793a1 1 0 1 1-1.414 1.414L10 11.414l-2.293 2.293a1 1 0 0 1-1.414-1.414L8.586 10 6.293 7.707a1 1 0 0 1 1.414-1.414L10 8.586l2.293-2.293a1 1 0 0 1 1.414 1.414L11.414 10l2.293 2.293Z" />
+       </svg>
+
+       <span className="sr-only">Error icon</span>
+      </div>
+     )}
+     <div className="ms-3 text-sm font-normal">{noti}</div>
+    </div>
+   )}
   </div>
  );
 };

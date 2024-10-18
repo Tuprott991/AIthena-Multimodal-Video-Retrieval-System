@@ -19,6 +19,7 @@ const SubmitSection = () => {
     password: "x3uRJaTVdy",
    }
   );
+  localStorage.setItem("sessionId", response.data.sessionId);
   setSessionId(response.data.sessionId);
  };
  const handleEvaluationID = async () => {
@@ -30,12 +31,14 @@ const SubmitSection = () => {
     },
    }
   );
+  localStorage.setItem("evaluationId", response.data[0].id);
+  localStorage.setItem("name", response.data[0].name);
   setEvaluationId({ id: response.data[0].id, name: response.data[0].name });
  };
  const handleRemove = (item) => {
   setAdded((prev) => prev.filter((i) => i.id !== item.id));
  };
- console.log(added);
+ console.log(sessionId);
  return (
   <div className="rounded-lg p-4 w-full">
    <div className="flex flex-wrap ">
@@ -49,8 +52,9 @@ const SubmitSection = () => {
      <input
       type="text"
       value={sessionId}
+      onChange={(e) => setSessionId(e.target.value)}
       disabled
-      className="basis-[30%] px-4 cursor-not-allowed bg-slate-200  border border-gray-300 focus:outline-none text-gray-900 text-sm rounded-lg"
+      className="basis-[30%] px-4 c bg-slate-200 cursor-not-allowed  border border-gray-300 focus:outline-none text-gray-900 text-sm rounded-lg"
      />
     </div>
     <div className="flex w-full gap-2">
@@ -62,15 +66,19 @@ const SubmitSection = () => {
      </div>
      <input
       type="text"
-      defaultValue={evaluationId.id}
-      disabled
-      className="basis-[30%] px-4 cursor-not-allowed bg-slate-200  border border-gray-300 focus:outline-none text-gray-900 text-sm rounded-lg"
+      value={evaluationId.id}
+      className="basis-[30%] px-4  bg-slate-100  border border-gray-300 focus:outline-none text-gray-900 text-sm rounded-lg"
+      onChange={(e) =>
+       setEvaluationId((prev) => ({ ...prev, id: e.target.value }))
+      }
      />
      <input
       type="text"
-      defaultValue={evaluationId.name}
-      disabled
-      className="basis-[20%] px-4 cursor-not-allowed bg-slate-200  border border-gray-300 focus:outline-none text-gray-900 text-sm rounded-lg"
+      value={evaluationId.name}
+      onChange={(e) =>
+       setEvaluationId((prev) => ({ ...prev, name: e.target.value }))
+      }
+      className="basis-[20%] px-4 bg-slate-100  border border-gray-300 focus:outline-none text-gray-900 text-sm rounded-lg"
      />
     </div>
    </div>

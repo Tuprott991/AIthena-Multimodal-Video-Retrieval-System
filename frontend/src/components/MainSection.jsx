@@ -156,7 +156,7 @@ const MainSection = () => {
          <button
           className="font-bold absolute text-sm text-center 
              rounded-sm top-1 left-1
-             px-2 py-[1px]
+             px-3 py-[3px]
              text-white bg-emerald-500 border-none focus:outline-none hover:bg-emerald-800 hover:ring-2 hover:ring-emerald-800  opacity-70 hover:opacity-100
              "
           onClick={() => handleAdded(item)}
@@ -167,7 +167,7 @@ const MainSection = () => {
          <button
           className="font-bold absolute text-sm text-center 
              rounded-sm top-1 left-1
-             px-2 py-[1px]
+             px-3.5 py-[3px]
              text-white bg-red-500 border-none focus:outline-none hover:bg-red-800 hover:ring-2 hover:ring-red-800  
              "
           onClick={() => handleRemove(item)}
