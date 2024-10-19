@@ -5,7 +5,7 @@ import axios from "axios";
 
 const Footer = () => {
  const scrollRef = useRef(null);
- const { added, footer, setAdded, setIframe, setFooter } =
+ const { submit, footer, setSubmit, setIframe, setFooter } =
   useContext(OptionContext);
  const navigate = useNavigate();
  const handleIR = async (id) => {
@@ -33,20 +33,30 @@ const Footer = () => {
   }
  };
 
- const handleAdded = (item) => {
-  if (!added.some((i) => i.id === item.id)) {
-   setAdded((prev) => [
-    ...prev,
+ const handleAdded = async (item) => {
+  if (!submit.some((i) => i.id === item.id)) {
+   const response = await axios.get(
+    `http://localhost:5001/get_Answer?path=${item.imgpath}`
+   );
+   const final = [
+    ...submit,
     {
      id: item.id,
-     folder: item.imgpath.split("\\").slice(-2, -1)[0],
-     image: item.imgpath.split("\\").slice(-1)[0],
+     milisecond: response.data.split(", ")[1],
+     folder: item.imgpath.split(/[/\\]/).slice(-2, -1)[0],
+     image: item.imgpath.split(/[/\\]/).slice(-1)[0],
     },
-   ]);
+   ];
+
+   localStorage.setItem("submit", JSON.stringify(final));
+   setSubmit(final);
   }
  };
+
  const handleRemove = (item) => {
-  setAdded((prev) => prev.filter((i) => i.id !== item.id));
+  const final = submit.filter((i) => i.id != item.id);
+  localStorage.setItem("submit", JSON.stringify(final));
+  setSubmit(final);
  };
  useEffect(() => {
   // Scroll to the middle position when the component mounts
@@ -70,7 +80,7 @@ const Footer = () => {
         alt="image description"
         onClick={() => handleOnClick(item.id)}
        />
-       {!added.some((i) => i.id === item.id) ? (
+       {!submit.some((i) => i.id === item.id) ? (
         <button
          className="font-bold absolute text-sm text-center 
              rounded-sm top-1 left-1

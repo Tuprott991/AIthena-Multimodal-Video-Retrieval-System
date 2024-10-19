@@ -117,27 +117,11 @@ const MainSection = () => {
    setSubmit(final);
   }
  };
- //  const handleAdded = async (item) => {
- //   if (!added.some((i) => i.id === item.id)) {
- //    const response = await axios.get(
- //     `http://localhost:5001/get_Answer?path=${item.imgpath}`
- //    );
- //    setAdded((prev) => [
- //     ...prev,
- //     {
- //      id: item.id,
- //      milisecond: response.data.split(", ")[1],
- //      folder: item.imgpath.split(/[/\\]/).slice(-2, -1)[0],
- //      image: item.imgpath.split(/[/\\]/).slice(-1)[0],
- //     },
- //    ]);
- //   }
- //  };
+
  const handleRemove = (item) => {
   const final = submit.filter((i) => i.id != item.id);
   localStorage.setItem("submit", JSON.stringify(final));
   setSubmit(final);
-  //   setAdded((prev) => prev.filter((i) => i.id !== item.id));
  };
 
  if (loading) {
