@@ -5,7 +5,7 @@ import Main from "../components/Main";
 
 const Layout = () => {
  return (
-  <div className="antialiased bg-gray-50 dark:bg-gray-900 h-full overflow-auto">
+  <div className="antialiased bg-gray-50  h-full overflow-auto">
    <Nav></Nav>
    <Aside></Aside>
    <Main></Main>

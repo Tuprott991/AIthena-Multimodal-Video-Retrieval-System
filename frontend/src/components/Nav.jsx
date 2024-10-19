@@ -7,9 +7,9 @@ const Nav = () => {
   navigate("/");
  };
  return (
-  <nav className="bg-white border-b border-gray-200 px-4 py-2.5 dark:bg-gray-800 dark:border-gray-700 fixed left-0 right-0 top-0 z-50 flex">
+  <nav className="bg-white border-b border-gray-200 px-4 py-2.5 fixed left-0 right-0 top-0 z-50 flex">
    <div
-    className="cursor-pointer self-center text-xl font-bold whitespace-nowrap dark:text-white mr-8"
+    className="cursor-pointer self-center text-xl font-bold whitespace-nowrap  mr-8"
     onClick={handleClick}
     style={{ fontFamily: "'Montserrat', 'Poppins', 'Raleway', sans-serif" }}
    >

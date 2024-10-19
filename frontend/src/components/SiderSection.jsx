@@ -12,7 +12,7 @@ const SiderSection = () => {
     <div className="mr-3 mt-2">
      <label
       htmlFor="minmax-range"
-      className="block  font-medium text-gray-900 dark:text-white"
+      className="block  font-medium text-gray-900 "
      >
       Images: <span className="text-gray-700 font-base">{range}</span>
      </label>
@@ -23,7 +23,7 @@ const SiderSection = () => {
       max="300"
       value={range}
       step={10}
-      className="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer dark:bg-gray-700"
+      className="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer "
       onChange={(e) => handleRange(e.target.value)}
      />
 

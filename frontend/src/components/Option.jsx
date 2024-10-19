@@ -128,7 +128,7 @@ const Option = () => {
      <select
       id="countries"
       onChange={(event) => handleOptionChange(event.target.value)}
-      className=" bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+      className=" bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 "
      >
       <option value="CLIP">CLIP L\14</option>
       <option value="OCR">OCR</option>
@@ -156,7 +156,7 @@ const Option = () => {
       onChange={(e) => handleQA(e.target.checked)}
       className="sr-only peer"
      />
-     <span className="border-l-2 pl-4  h-[100%] text-center flex  items-center border-slate-500 ms-3 text-sm font-medium text-gray-900 dark:text-gray-300">
+     <span className="border-l-2 pl-4  h-[100%] text-center flex  items-center border-slate-500 ms-3 text-sm font-medium text-gray-900 ">
       QA
      </span>
      <div className="ml-2 relative w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-amber-300  rounded-full peer  peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all  peer-checked:bg-amber-500"></div>
@@ -205,11 +205,11 @@ const Option = () => {
    {noti && (
     <div
      id="toast-default"
-     className="absolute right-4 top-16 flex items-center  py-2 pr-4 pl-2 text-gray-500 bg-white rounded-lg shadow dark:text-gray-400 dark:bg-gray-800"
+     className="absolute right-4 top-16 flex items-center  py-2 pr-4 pl-2 text-gray-500 bg-white rounded-lg shadow "
      role="alert"
     >
      {noti === "Submitting!" ? (
-      <div className="inline-flex items-center justify-center flex-shrink-0 w-8 h-8 text-orange-500 bg-orange-100 rounded-lg dark:bg-orange-700 dark:text-orange-200">
+      <div className="inline-flex items-center justify-center flex-shrink-0 w-8 h-8 text-orange-500 bg-orange-100 rounded-lg ">
        <svg
         className="w-5 h-5"
         aria-hidden="true"
@@ -222,7 +222,7 @@ const Option = () => {
        <span className="sr-only">Warning icon</span>
       </div>
      ) : noti === "CORRECT" ? (
-      <div className="inline-flex items-center justify-center flex-shrink-0 w-8 h-8 text-green-500 bg-green-100 rounded-lg dark:bg-green-800 dark:text-green-200">
+      <div className="inline-flex items-center justify-center flex-shrink-0 w-8 h-8 text-green-500 bg-green-100 rounded-lg ">
        <svg
         className="w-5 h-5"
         aria-hidden="true"
@@ -235,7 +235,7 @@ const Option = () => {
        <span className="sr-only">Check icon</span>
       </div>
      ) : (
-      <div className="inline-flex items-center justify-center flex-shrink-0 w-8 h-8 text-red-500 bg-red-100 rounded-lg dark:bg-red-800 dark:text-red-200">
+      <div className="inline-flex items-center justify-center flex-shrink-0 w-8 h-8 text-red-500 bg-red-100 rounded-lg ">
        <svg
         className="w-5 h-5"
         aria-hidden="true"

@@ -98,7 +98,7 @@ const SubmitSection = () => {
     </div>
    </div>
    <table className="w-full text-sm text-left rtl:text-right text-gray-500 mt-6 mb-8 ">
-    <thead className="text-xs text-gray-700 uppercase bg-gray-200 dark:bg-gray-700">
+    <thead className="text-xs text-gray-700 uppercase bg-gray-200 ">
      <tr>
       <th scope="col" className="px-6 py-3">
        Folder
@@ -135,7 +135,7 @@ const SubmitSection = () => {
         </td>
         <td className="px-6 py-4">
          <button
-          className="font-medium text-blue-600 dark:text-blue-500 hover:underline"
+          className="font-medium text-blue-600  hover:underline"
           onClick={() => handleRemove(item)}
          >
           Removed
