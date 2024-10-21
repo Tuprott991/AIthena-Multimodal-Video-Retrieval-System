@@ -3,8 +3,8 @@ backend/data/CLIP-features/
 backend/data/images/
 backend/data/image/
 backend/data/newFeatures/
-backend/data/remove/
 backend/data/map-keyframes/
+backend/data/remove/
 backend/faiss_normal_ViT.bin
 backend/utils/__pycache__/
 backend/filterobj/__pycache__/
