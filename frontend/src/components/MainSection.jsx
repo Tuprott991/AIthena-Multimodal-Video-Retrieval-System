@@ -183,8 +183,8 @@ const MainSection = () => {
           -
          </button>
         )}
-        <div className="font-medium absolute text-sm top-1 left-10 text-center text-green-500">
-         {item.imgpath.split(/[/\\]/).slice(-2).join("/")}
+        <div className="font-bold absolute text-sm top-1 left-1/4 text-center text-white bg-gray-800 bg-opacity-75 px-1 py-0.5 rounded">
+         <span>{item.imgpath.split(/[/\\]/).slice(-2).join("/")}</span>
         </div>
         <div className="invisible absolute bottom-[3px] flex items-center justify-center w-full gap-3 text-white">
          <button
