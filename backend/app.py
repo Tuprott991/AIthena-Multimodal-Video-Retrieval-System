@@ -46,7 +46,7 @@ global_pagefile = [{'imgpath': path, 'id': id} for id, path in DictImagePath.ite
 pre_bin_file = 'pre_faiss_normal_ViT.bin'
 LenDictPath = len(DictImagePath)
 bin_file='faiss_normal_ViT.bin' 
-MyFaiss = Myfaiss(bin_file, DictImagePath, 'cpu', Translation(), "ViT-L/14")  # Đổi lại ViT-B/32 nếu dùng data cũ
+MyFaiss = Myfaiss(bin_file, DictImagePath, 'cpu', Translation(), "ViT-B/32")  # Đổi lại ViT-B/32 nếu dùng data cũ
 
 preQueryPageFile = []
 
@@ -305,21 +305,62 @@ def evaluation_id():
         return jsonify({"error": "Failed to fetch evaluation ID"}), 500
 
 
-@app.route("/sketchquery")
+# @app.route("/sketchquery")
+# def sketchquery():
+#     pagefile = []
+#     imgurl = request.args.get('imgurl')
+#     img_path = dlimg.download_image(imgurl)
+
+#     _, list_ids, _, list_image_paths = MyFaiss.image__search(5,img_path , k=50)
+#     imgperindex = 50
+#     for imgpath, id in zip(list_image_paths, list_ids):
+#         pagefile.append({'imgpath': imgpath, 'id': int(id)})
+#     data = {'num_page': int(LenDictPath/imgperindex)+1, 'pagefile': pagefile}
+#     for item in data['pagefile']:
+#         if (item['imgpath']):
+#             item['imgpath'] = os.path.relpath(item['imgpath'], start_path)
+#     return jsonify(data)
+
+
+@app.route("/sketchquery", methods=['POST'])
 def sketchquery():
     pagefile = []
-    imgurl = request.args.get('imgurl')
+    
+    # Assuming the incoming data is in JSON format and contains 'imgurl'
+    data = request.json
+    
+    if not data or 'imgurl' not in data:
+        return jsonify({"error": "imgurl is required"}), 400
+    
+    imgurl = data['imgurl']
+    
+    # Assuming dlimg.download_image is a method to download the image from the provided URL
     img_path = dlimg.download_image(imgurl)
 
-    _, list_ids, _, list_image_paths = MyFaiss.image__search(5,img_path , k=50)
+    print(img_path)
+    # Calling the MyFaiss.image__search function with the image path
+    _, list_ids, _, list_image_paths = MyFaiss.image__search(5, img_path, k=50)
     imgperindex = 50
+    
+    # Populating the pagefile list with the image paths and ids
     for imgpath, id in zip(list_image_paths, list_ids):
         pagefile.append({'imgpath': imgpath, 'id': int(id)})
-    data = {'num_page': int(LenDictPath/imgperindex)+1, 'pagefile': pagefile}
+    
+
+    # Preparing the response data
+    data = {
+        'num_page': int(LenDictPath/imgperindex) + 1,
+        'pagefile': pagefile
+    }
+    
+    # Adjusting paths to be relative
     for item in data['pagefile']:
-        if (item['imgpath']):
+        if item['imgpath']:
             item['imgpath'] = os.path.relpath(item['imgpath'], start_path)
+    
+    # Returning the data as a JSON response
     return jsonify(data)
+
 
 
 @app.route("/genimg")

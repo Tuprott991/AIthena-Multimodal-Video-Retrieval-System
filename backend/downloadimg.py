@@ -19,6 +19,9 @@ def download_image(url: str, folder: str = 'data/imgInput') -> str:
     file_path = os.path.join(folder, file_name)
     
     # Tải ảnh
+    print(url)
+    # url = 'https://oaidalleapiprodscus.blob.core.windows.net/private/org-Stu2EOJxHRNc9l7HJqzHlAQK/user-5DNLB81AX8JN8rEOnwBHnPfl/img-3k624C2AAmkrxKD5hw4DG5eu.png?st=2024-10-22T09%3A43%3A52Z&se=2024-10-22T11%3A43%3A52Z&sp=r&sv=2024-08-04&sr=b&rscd=inline&rsct=image/png&skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2024-10-21T18%3A50%3A47Z&ske=2024-10-22T18%3A50%3A47Z&sks=b&skv=2024-08-04&sig=2zNYV0d8ZgKlaLsr0jG/jmOwhaMq0Oy6emQrUVnuhUY%3D'
+
     response = requests.get(url)
     if response.status_code == 200:
         with open(file_path, 'wb') as f:
