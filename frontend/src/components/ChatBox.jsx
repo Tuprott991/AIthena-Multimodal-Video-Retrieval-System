@@ -259,7 +259,7 @@ const ChatBox = () => {
        name="url"
        id="url"
        className="border w-full text-sm px-3 py-2 focus:border-slate-400 rounded-lg focus:outline-none  mb-2"
-       placeholder="Url"
+       placeholder="URL...  "
        onChange={handleSketchChange}
        required
       ></input>

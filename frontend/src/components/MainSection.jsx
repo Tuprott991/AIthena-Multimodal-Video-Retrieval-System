@@ -3,7 +3,8 @@ import { OptionContext } from "../OptionContext";
 import axios from "axios";
 import { useNavigate, useSearchParams } from "react-router-dom";
 
-const MainSection = () => {
+const MainSection = ({ isSketch }) => {
+ console.log("props", isSketch);
  const navigate = useNavigate();
  const {
   data,
@@ -183,7 +184,11 @@ const MainSection = () => {
           -
          </button>
         )}
-        <div className="font-bold absolute text-sm top-1 left-1/4 text-center text-white bg-gray-800 bg-opacity-75 px-1 py-0.5 rounded">
+        <div
+         className={`font-bold absolute ${
+          isSketch ? "text-xs" : "text-sm"
+         } top-1 left-1/4 text-center text-white bg-gray-800 bg-opacity-75 px-1 py-0.5 rounded`}
+        >
          <span>{item.imgpath.split(/[/\\]/).slice(-2).join("/")}</span>
         </div>
         <div className="invisible absolute bottom-[3px] flex items-center justify-center w-full gap-3 text-white">

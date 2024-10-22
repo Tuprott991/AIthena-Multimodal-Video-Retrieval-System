@@ -2,6 +2,7 @@ import { useState } from "react";
 import Footer from "./Footer";
 import MainSection from "./MainSection";
 import SubmitSection from "./SubmitSection";
+import SketchSection from "./SketchSection";
 
 const Main = () => {
  const [tab, setTab] = useState("main");
@@ -25,6 +26,17 @@ const Main = () => {
        Main
       </button>
       <button
+       value="sketch"
+       onClick={(e) => setTab(e.target.value)}
+       className={`border-b-2  px-2  py-3 ${
+        tab == "sketch"
+         ? "text-purple-600 border-purple-600"
+         : "border-white hover:border-slate-400"
+       } `}
+      >
+       AI-sketch/image URL
+      </button>
+      <button
        value="submit"
        onClick={(e) => setTab(e.target.value)}
        className={`border-b-2  px-2  py-3 ${
@@ -42,8 +54,10 @@ const Main = () => {
       <MainSection></MainSection>
       <Footer></Footer>
      </>
-    ) : (
+    ) : tab == "submit" ? (
      <SubmitSection></SubmitSection>
+    ) : (
+     <SketchSection></SketchSection>
     )}
    </main>
   </>
