@@ -10,6 +10,7 @@ from flask_cors import CORS
 import openai_func as opai
 from dotenv import load_dotenv
 import requests
+import downloadimg as dlimg
 load_dotenv()
 os.environ['CUDA_VISIBLE_DEVICES'] = '-1'
 
@@ -45,7 +46,7 @@ global_pagefile = [{'imgpath': path, 'id': id} for id, path in DictImagePath.ite
 pre_bin_file = 'pre_faiss_normal_ViT.bin'
 LenDictPath = len(DictImagePath)
 bin_file='faiss_normal_ViT.bin' 
-MyFaiss = Myfaiss(bin_file, DictImagePath, 'cpu', Translation(), "ViT-B/32")  # Đổi lại ViT-B/32 nếu dùng data cũ
+MyFaiss = Myfaiss(bin_file, DictImagePath, 'cpu', Translation(), "ViT-L/14")  # Đổi lại ViT-B/32 nếu dùng data cũ
 
 preQueryPageFile = []
 
@@ -115,7 +116,7 @@ def image_search():
     print("image search")
     pagefile = []
     id_query = int(request.args.get('imgid'))
-    _, list_ids, _, list_image_paths = MyFaiss.image_search(id_query, k=50)
+    _, list_ids, _, list_image_paths = MyFaiss.image__search(id_query, k=50)
     imgperindex = 100
     for imgpath, id in zip(list_image_paths, list_ids):
         pagefile.append({'imgpath': imgpath, 'id': int(id)})
@@ -302,6 +303,24 @@ def evaluation_id():
     except requests.exceptions.RequestException as e:
         print(f"Error fetching evaluation ID: {e}")
         return jsonify({"error": "Failed to fetch evaluation ID"}), 500
+
+
+@app.route("/sketchquery")
+def sketchquery():
+    pagefile = []
+    imgurl = request.args.get('imgurl')
+    img_path = dlimg.download_image(imgurl)
+
+    _, list_ids, _, list_image_paths = MyFaiss.image__search(5,img_path , k=50)
+    imgperindex = 50
+    for imgpath, id in zip(list_image_paths, list_ids):
+        pagefile.append({'imgpath': imgpath, 'id': int(id)})
+    data = {'num_page': int(LenDictPath/imgperindex)+1, 'pagefile': pagefile}
+    for item in data['pagefile']:
+        if (item['imgpath']):
+            item['imgpath'] = os.path.relpath(item['imgpath'], start_path)
+    return jsonify(data)
+
 
 @app.route("/genimg")
 def gen_img():

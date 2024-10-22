@@ -13,7 +13,7 @@ class Myfaiss:
         self.index= self.load_bin_file(bin_file)
         self.id2img_fps= id2img_fps
         self.device= device
-        self.model, _ = clip.load(clip_backbone, device=device)
+        self.model, self.preprocess = clip.load(clip_backbone, device=device)
         self.translater = translater
 
     def load_bin_file(self, bin_file: str):
@@ -34,8 +34,14 @@ class Myfaiss:
 
         plt.show()
         
-    def image_search(self, id_query, k,): 
-        query_feats = self.index.reconstruct(id_query).reshape(1,-1)
+    def image__search(self, id_query, img_path =None, k =100): 
+        if img_path:
+            image = Image.open(img_path) # img_path là đường dẫn chính xác
+            image_input = self.preprocess(image).unsqueeze(0).to(self.device)
+            with torch.no_grad():
+                query_feats = self.model.encode_image(image_input).cpu().detach().numpy().astype(np.float16)
+        else:
+            query_feats = self.index.reconstruct(id_query).reshape(1,-1)
 
         scores, idx_image = self.index.search(query_feats, k=k)
         idx_image = idx_image.flatten()
