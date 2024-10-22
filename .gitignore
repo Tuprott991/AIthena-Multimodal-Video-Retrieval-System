@@ -1,8 +1,7 @@
-# Ignore backend data directories
 backend/data/CLIP-features/
 backend/data/images/
 backend/data/image/
-backend/data/imgInput/*
+backend/data/imgInput/
 backend/data/newFeatures/
 backend/data/map-keyframes/
 backend/data/remove/
@@ -15,21 +14,18 @@ backend/demo.py
 backend/test.py
 backend/.env
 
-# Ignore logs
 logs/
 *.log
 npm-debug.log*
 yarn-debug.log*
 pnpm-debug.log*
 
-# Ignore frontend directories
 frontend/node_modules/
 frontend/dist/
 frontend/dist-ssr/
 frontend/*.local
 frontend/public/images/
 
-# Ignore editor configuration files and directories
 frontend/.vscode/*
 frontend/.idea/
 frontend/.DS_Store
