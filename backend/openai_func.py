@@ -90,13 +90,12 @@ def gen_img(i_prompt):
       n=1,
       size="1792x1024"
   )
-
-  image_url = response['data'][0]['url']  # Lấy URL hình ảnh
-  
+  # return response
+  return response['data'][0]
   # Tải hình ảnh từ URL và hiển thị
-  image_response = requests.get(image_url)
-  image = Image.open(BytesIO(image_response.content))
-  image.show()  # Hiển thị hình ảnh
+  # image_response = requests.get(image_url)
+  # image = Image.open(BytesIO(image_response.content))
+  # image.show()  # Hiển thị hình ảnh
 
 # def main():
 #   standard_prompt(input("Nhập prompt đi thằng ngu:"))

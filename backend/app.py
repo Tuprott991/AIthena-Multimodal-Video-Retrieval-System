@@ -302,7 +302,12 @@ def evaluation_id():
     except requests.exceptions.RequestException as e:
         print(f"Error fetching evaluation ID: {e}")
         return jsonify({"error": "Failed to fetch evaluation ID"}), 500
-    
+
+@app.route("/genimg")
+def gen_img():
+    prompt = request.args.get('prompt')
+    output = opai.gen_img(prompt)
+    return jsonify(output)
 
 if __name__ == '__main__':
     app.run(debug=True, host="0.0.0.0", port=5001)
