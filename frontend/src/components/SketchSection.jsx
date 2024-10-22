@@ -3,8 +3,9 @@ import MainSection from "./MainSection";
 import axios from "axios";
 
 const SketchSection = () => {
- const [loading, setLoading] = useState(false);
+ const [loading, setLoading] = useState(null);
  const [currentPrompt, setCurrentPrompt] = useState();
+ const [currentURL, setCurrentURL] = useState();
  const [generatedImg, setGeneratedImg] = useState();
  const handlePromptSubmit = async (e) => {
   e.preventDefault();
@@ -32,6 +33,15 @@ const SketchSection = () => {
       onChange={(e) => setCurrentPrompt(e.target.value)}
       required
      ></textarea>
+     <input
+      value={currentURL}
+      name="imagePath"
+      id="imagePath"
+      className="border w-full text-sm px-3 py-2 focus:border-slate-400 rounded-lg focus:outline-none mb-2"
+      placeholder="URL"
+      onChange={(e) => setCurrentURL(e.target.value)}
+      required
+     ></input>
      <button
       type="submit"
       className="flex items-center justify-center gap-1 rounded-lg font-semibold w-full px-4 py-2 text-sm text-white border bg-blue-700 border-blue-700 hover:bg-blue-800 focus:ring-2 focus:outline-none focus:ring-blue-300 "
@@ -83,10 +93,7 @@ const SketchSection = () => {
      ) : loading == false ? (
       <>
        <div className="group relative w-full h-full">
-        <img
-         src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-Stu2EOJxHRNc9l7HJqzHlAQK/user-5DNLB81AX8JN8rEOnwBHnPfl/img-Blveny7viNs2EGBFz9K1Iyng.png?st=2024-10-22T04%3A04%3A18Z&se=2024-10-22T06%3A04%3A18Z&sp=r&sv=2024-08-04&sr=b&rscd=inline&rsct=image/png&skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2024-10-21T17%3A14%3A15Z&ske=2024-10-22T17%3A14%3A15Z&sks=b&skv=2024-08-04&sig=/Mja2OwIZ9J3s30EXirLA9MzfxfD%2BZ7ZN26sanpRMuw%3D"
-         className="w-full h-full"
-        />
+        <img src={generatedImg} className="w-full h-full" />
         <button
          className="absolute top-2 left-1 font-medium group-hover:visible text-sm rounded-sm
              px-3 py-[2px]
