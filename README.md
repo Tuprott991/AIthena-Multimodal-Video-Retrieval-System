@@ -1,6 +1,17 @@
 # AIthena Team
+## Some system images
 
-### Setup
+### Full graphical user interface and simple query test
+![Graphical User Interface](images/UI.drawio.png)
+### OCR-based query
+![OCR-based query](images/OCR.jpg)
+### Question and Anwser using GPT-4o API
+![Question and Anwser](images/QA_Test.png)
+### Rank comparison of CLIP-based and Gen-AI image-based query
+![Compare 1](images/MedalCLIP.png)
+![Compare 2](images/medalgenAI.png)
+
+## Setup
 #### Warning: This system work perfectly on python==3.11.9 and pip==24.0
 #### Please follow the instruction below
 
